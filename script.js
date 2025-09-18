@@ -1,16 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // State variables
-    let selectedDayData = null;
-    let currentIndex = 0;
-    let studyMode = 'en-ko'; // 'en-ko' or 'ko-en'
-    let showMeaning = false;
+    // ------------------
+    // 상태 변수 (State Variables)
+    // ------------------
+    let selectedDayData = null; // 선택된 Day의 단어 데이터
+    let currentIndex = 0;       // 현재 단어의 인덱스
+    let studyMode = 'en-ko';    // 학습 모드 ('en-ko' 또는 'ko-en')
+    let showMeaning = false;    // 정답 표시 여부
 
-    // DOM Elements
+    // ------------------
+    // DOM 요소 (DOM Elements)
+    // ------------------
     const daySelector = document.getElementById('day-selector');
     const vocaCardContainer = document.getElementById('voca-card-container');
     const studyModeToggle = document.getElementById('study-mode-toggle');
 
-    // --- Helper Functions ---
+    // ------------------
+    // 핵심 함수 (Core Functions)
+    // ------------------
+
+    /**
+     * 배열의 순서를 무작위로 섞는 함수
+     * @param {Array} array - 섞을 배열
+     * @returns {Array} - 순서가 섞인 새로운 배열
+     */
     const shuffleArray = (array) => {
         const newArray = [...array];
         for (let i = newArray.length - 1; i > 0; i--) {
@@ -20,17 +32,24 @@ document.addEventListener('DOMContentLoaded', () => {
         return newArray;
     };
 
+    /**
+     * 주어진 영어 단어를 음성으로 재생하는 함수 (Text-to-Speech)
+     * @param {string} word - 발음할 영어 단어
+     */
     const handleSpeak = (word) => {
         if (word && 'speechSynthesis' in window) {
-            window.speechSynthesis.cancel();
+            window.speechSynthesis.cancel(); // 이전 음성 재생이 있다면 중지
             const utterance = new SpeechSynthesisUtterance(word);
-            utterance.lang = 'en-US';
+            utterance.lang = 'en-US'; // 미국식 영어 발음으로 설정
             window.speechSynthesis.speak(utterance);
         }
     };
     
-    // --- UI Rendering ---
+    /**
+     * 현재 상태에 맞춰 단어 카드 UI를 화면에 렌더링하는 함수
+     */
     const renderVocaCard = () => {
+        // Day가 선택되지 않았을 때 초기 안내 메시지 표시
         if (!selectedDayData) {
             vocaCardContainer.innerHTML = `
                 <div class="bg-white border border-gray-200 rounded-xl p-6 md:p-10 min-h-[450px] flex items-center justify-center">
@@ -50,11 +69,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let questionContent, answerContent;
 
-        if (isEnKoMode) {
+        // 학습 모드에 따라 문제와 정답 내용 구성
+        if (isEnKoMode) { // 영단어 -> 뜻
             questionContent = `
                 <div class="flex items-center gap-4">
                     <h2 class="font-montserrat text-5xl md:text-7xl font-bold text-blue-600">${wordData.en}</h2>
-                    <button id="speak-button" class="text-gray-500 hover:text-blue-600 transition-colors p-2 rounded-full hover:bg-blue-50" title="발음 듣기">
+                    <button id="speak-button-question" class="text-gray-500 hover:text-blue-600 transition-colors p-2 rounded-full hover:bg-blue-50" title="발음 듣기">
                         ${speakerIcon}
                     </button>
                 </div>
@@ -67,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p class="text-lg text-blue-600 mt-1">${wordData.translation}</p>
                     </div>
                 </div>`;
-        } else { // ko-en mode
+        } else { // 뜻 -> 영단어
             const koWordClass = wordData.ko.length > 15 ? 'text-3xl md:text-4xl' : 'text-4xl md:text-5xl';
             questionContent = `
                 <h2 class="font-sans font-bold text-blue-600 ${koWordClass}">${wordData.ko}</h2>
@@ -76,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="w-full animate-fade-in text-center">
                     <div class="flex items-center justify-center gap-4">
                         <h2 class="font-montserrat text-5xl md:text-7xl font-bold text-red-600">${wordData.en}</h2>
-                        <button id="speak-button" class="text-gray-500 hover:text-blue-600 transition-colors p-2 rounded-full hover:bg-blue-50" title="발음 듣기">
+                        <button id="speak-button-answer" class="text-gray-500 hover:text-blue-600 transition-colors p-2 rounded-full hover:bg-blue-50" title="발음 듣기">
                             ${speakerIcon}
                         </button>
                     </div>
@@ -88,6 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>`;
         }
 
+        // 전체 카드 HTML 구조 생성
         vocaCardContainer.innerHTML = `
             <div class="bg-white border border-gray-200 rounded-xl shadow-lg p-6 md:p-10 min-h-[450px] flex flex-col justify-between">
                 <div class="text-right text-gray-500 font-medium">
@@ -114,21 +135,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>`;
             
-        // Add event listeners to newly created buttons
+        // 카드가 새로 그려질 때마다 버튼에 이벤트 리스너를 다시 연결
         addCardEventListeners(wordData);
     };
-
-    // --- Event Handlers & Listeners ---
-    const handleNavigation = (direction) => {
-        if (!selectedDayData) return;
-        const newIndex = direction === 'next' ? currentIndex + 1 : currentIndex - 1;
-        if (newIndex >= 0 && newIndex < selectedDayData.words.length) {
-            currentIndex = newIndex;
-            showMeaning = false;
-            renderVocaCard();
-        }
-    };
     
+    /**
+     * 동적으로 생성된 카드 내부 버튼들에 이벤트 리스너를 추가하는 함수
+     * @param {object} wordData - 현재 단어 데이터
+     */
     const addCardEventListeners = (wordData) => {
         const showMeaningButton = document.getElementById('show-meaning-button');
         if (showMeaningButton) {
@@ -138,15 +152,42 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
         
-        const speakButton = document.getElementById('speak-button');
-        if (speakButton) {
-            speakButton.addEventListener('click', () => handleSpeak(wordData.en));
+        // 질문 영역의 스피커 버튼
+        const speakButtonQuestion = document.getElementById('speak-button-question');
+        if (speakButtonQuestion) {
+            speakButtonQuestion.addEventListener('click', () => handleSpeak(wordData.en));
         }
 
+        // 정답 영역의 스피커 버튼
+        const speakButtonAnswer = document.getElementById('speak-button-answer');
+        if (speakButtonAnswer) {
+            speakButtonAnswer.addEventListener('click', () => handleSpeak(wordData.en));
+        }
+
+        // 이전/다음 버튼
         document.getElementById('prev-button').addEventListener('click', () => handleNavigation('prev'));
         document.getElementById('next-button').addEventListener('click', () => handleNavigation('next'));
     };
 
+    /**
+     * '이전' 또는 '다음' 버튼 클릭을 처리하는 함수
+     * @param {'prev' | 'next'} direction - 이동 방향
+     */
+    const handleNavigation = (direction) => {
+        if (!selectedDayData) return;
+        const newIndex = direction === 'next' ? currentIndex + 1 : currentIndex - 1;
+        if (newIndex >= 0 && newIndex < selectedDayData.words.length) {
+            currentIndex = newIndex;
+            showMeaning = false; // 다음 단어로 넘어가면 정답을 다시 숨김
+            renderVocaCard();
+        }
+    };
+    
+    // ------------------
+    // 이벤트 리스너 설정 (Event Listeners)
+    // ------------------
+
+    // Day 선택 메뉴 변경 이벤트
     daySelector.addEventListener('change', (e) => {
         const day = Number(e.target.value);
         const dayData = window.vocaData.find(d => d.day === day);
@@ -159,13 +200,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // 학습 모드 토글 버튼 클릭 이벤트
     studyModeToggle.addEventListener('click', (e) => {
         const button = e.target.closest('.study-mode-button');
-        if (button) {
+        if (button && button.dataset.mode !== studyMode) {
             studyMode = button.dataset.mode;
             showMeaning = false;
 
-            // Update button styles
+            // 버튼 활성화/비활성화 스타일 업데이트
             document.querySelectorAll('.study-mode-button').forEach(btn => {
                 if (btn.dataset.mode === studyMode) {
                     btn.classList.add('bg-white', 'text-blue-600', 'shadow');
@@ -176,24 +218,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-            renderVocaCard();
+            // 단어가 이미 선택된 상태라면 카드 UI만 다시 렌더링
+            if(selectedDayData) {
+                renderVocaCard();
+            }
         }
     });
 
 
-    // --- Initialization ---
+    // ------------------
+    // 초기화 함수 (Initialization)
+    // ------------------
     const init = () => {
-        // Populate Day Selector
-        window.vocaData.forEach(d => {
-            const option = document.createElement('option');
-            option.value = d.day;
-            option.textContent = `Day ${d.day}`;
-            daySelector.appendChild(option);
-        });
+        // voca-data.js에서 데이터를 가져와 Day 선택 메뉴를 동적으로 생성
+        if (window.vocaData && window.vocaData.length > 0) {
+            window.vocaData.forEach(d => {
+                const option = document.createElement('option');
+                option.value = d.day;
+                option.textContent = `Day ${d.day}`;
+                daySelector.appendChild(option);
+            });
+        }
 
-        // Initial Render
+        // 초기 화면 렌더링
         renderVocaCard();
     };
 
+    // 페이지 로드 완료 시 앱 초기화 실행
     init();
 });
