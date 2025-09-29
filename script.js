@@ -4,9 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // ------------------
     let selectedDayData = null;
     let currentIndex = 0;
-    let studyMode = 'en-ko';
+    let studyMode = 'en-ko'; // en-ko, ko-en
+    let currentMode = 'normal'; // normal, drawer
     let showMeaning = false;
-    let isAudioUnlocked = false; // 모바일 오디오 잠금 해제 상태
+    let isAudioUnlocked = false;
+    let bookmarkedWords = [];
+    let lastSelectedDay = null; // 마지막으로 학습한 Day를 저장
 
     // ------------------
     // DOM 요소 (DOM Elements)
@@ -14,29 +17,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const daySelector = document.getElementById('day-selector');
     const vocaCardContainer = document.getElementById('voca-card-container');
     const studyModeToggle = document.getElementById('study-mode-toggle');
-    
+    const modeSelector = document.getElementById('mode-selector');
+    const normalModeButton = document.querySelector('.mode-button[data-mode="normal"]');
+    const drawerModeButton = document.querySelector('.mode-button[data-mode="drawer"]');
+
+    // ------------------
+    // 로컬 저장소 (Local Storage)
+    // ------------------
+    const loadBookmarkedWords = () => {
+        const storedWords = localStorage.getItem('bookmarkedVoca');
+        bookmarkedWords = storedWords ? JSON.parse(storedWords) : [];
+    };
+
+    const saveBookmarkedWords = () => {
+        localStorage.setItem('bookmarkedVoca', JSON.stringify(bookmarkedWords));
+    };
+
+
     // ------------------
     // 음성 재생(TTS) 관련 설정
     // ------------------
     try {
         if ('speechSynthesis' in window) {
             window.speechSynthesis.getVoices();
-            window.speechSynthesis.onvoiceschanged = () => {
-                window.speechSynthesis.getVoices();
-            };
+            window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
         }
     } catch (e) {
         console.error("Speech Synthesis API is not supported in this browser.", e);
     }
 
-    /**
-     * 모바일 브라우저(특히 iOS)에서 오디오 재생 권한을 얻기 위한 함수.
-     * 사용자의 첫 터치 이벤트 시 호출되어야 합니다.
-     */
     const unlockAudio = () => {
         if (isAudioUnlocked || !('speechSynthesis' in window)) return;
-        
-        // 아주 짧은 빈 소리를 재생하여 오디오 컨텍스트를 활성화합니다.
         const utterance = new SpeechSynthesisUtterance('');
         window.speechSynthesis.speak(utterance);
         isAudioUnlocked = true;
@@ -54,6 +65,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         return newArray;
     };
+    
+    const loadDayData = (day) => {
+        const dayData = window.vocaData.find(d => d.day === day);
+        if (dayData) {
+            lastSelectedDay = day;
+            selectedDayData = { ...dayData, words: shuffleArray(dayData.words) };
+            currentIndex = 0;
+            showMeaning = false;
+            renderVocaCard();
+        }
+    };
 
     const handleSpeak = (word) => {
         if (!('speechSynthesis' in window) || !word) {
@@ -67,12 +89,40 @@ document.addEventListener('DOMContentLoaded', () => {
         utterance.pitch = 1.0;
         window.speechSynthesis.speak(utterance);
     };
+
+    const toggleBookmark = (word) => {
+        const wordIndex = bookmarkedWords.findIndex(item => item.en === word.en);
+        if (wordIndex > -1) {
+            bookmarkedWords.splice(wordIndex, 1);
+        } else {
+            bookmarkedWords.push(word);
+        }
+        saveBookmarkedWords();
+
+        if (currentMode === 'drawer') {
+             selectedDayData.words = shuffleArray(bookmarkedWords);
+             if (currentIndex >= selectedDayData.words.length) {
+                currentIndex = Math.max(0, selectedDayData.words.length - 1);
+             }
+        }
+        
+        renderVocaCard();
+        updateDrawerModeButton();
+    };
     
+    const updateDrawerModeButton = () => {
+        drawerModeButton.textContent = `서랍 (${bookmarkedWords.length})`;
+    };
+
     const renderVocaCard = () => {
-        if (!selectedDayData) {
+        if (!selectedDayData || selectedDayData.words.length === 0) {
+            let message = "학습할 Day를 선택해 주세요.";
+            if (currentMode === 'drawer') {
+                message = "서랍이 비어있습니다. 단어에 별표를 눌러 추가해 보세요.";
+            }
             vocaCardContainer.innerHTML = `
                 <div class="bg-white border border-gray-200 rounded-xl p-6 md:p-10 min-h-[450px] flex items-center justify-center">
-                    <p class="text-gray-500 text-xl">학습할 Day를 선택해 주세요.</p>
+                    <p class="text-gray-500 text-xl">${message}</p>
                 </div>`;
             return;
         }
@@ -80,12 +130,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const wordData = selectedDayData.words[currentIndex];
         const isEnKoMode = studyMode === 'en-ko';
         const totalWords = selectedDayData.words.length;
+        const isBookmarked = bookmarkedWords.some(item => item.en === wordData.en);
 
         const speakerIcon = `
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
             </svg>`;
 
+        const starIcon = `
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+            </svg>`;
+        
         let questionContent, answerContent;
 
         if (isEnKoMode) {
@@ -126,8 +182,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>`;
         }
 
+
         vocaCardContainer.innerHTML = `
-            <div class="bg-white border border-gray-200 rounded-xl shadow-lg p-6 md:p-10 min-h-[450px] flex flex-col justify-between">
+            <div class="bg-white border border-gray-200 rounded-xl shadow-lg p-6 md:p-10 min-h-[450px] flex flex-col justify-between relative">
+                 <div class="absolute top-4 left-4">
+                     <button class="star-button ${isBookmarked ? 'bookmarked' : ''} text-gray-400 hover:text-yellow-400 transition-colors" title="서랍에 추가/제거">
+                        ${starIcon}
+                    </button>
+                </div>
                 <div class="text-right text-gray-500 font-medium">${currentIndex + 1} / ${totalWords}</div>
                 <div class="flex-grow flex flex-col justify-center items-center gap-2 text-center">${questionContent}</div>
                 <div id="answer-section" class="min-h-[180px] mt-4 flex flex-col justify-center items-center text-center">
@@ -139,14 +201,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>`;
             
-        addCardEventListeners();
+        addCardEventListeners(wordData);
     };
     
-    const addCardEventListeners = () => {
+    const addCardEventListeners = (wordData) => {
         const showMeaningButton = document.getElementById('show-meaning-button');
         if (showMeaningButton) {
             showMeaningButton.addEventListener('click', () => {
-                unlockAudio(); // 사용자의 첫 터치 중 하나로 간주하고 오디오 잠금 해제
+                unlockAudio();
                 showMeaning = true;
                 renderVocaCard();
             });
@@ -154,11 +216,16 @@ document.addEventListener('DOMContentLoaded', () => {
         
         document.querySelectorAll('.speak-button').forEach(button => {
             button.addEventListener('click', (e) => {
-                unlockAudio(); // 스피커 버튼 클릭도 사용자의 터치이므로 잠금 해제 시도
+                unlockAudio();
                 const wordToSpeak = e.currentTarget.dataset.speakWord;
                 handleSpeak(wordToSpeak);
             });
         });
+        
+        const starButton = document.querySelector('.star-button');
+        if (starButton) {
+            starButton.addEventListener('click', () => toggleBookmark(wordData));
+        }
 
         document.getElementById('prev-button').addEventListener('click', () => handleNavigation('prev'));
         document.getElementById('next-button').addEventListener('click', () => handleNavigation('next'));
@@ -178,33 +245,63 @@ document.addEventListener('DOMContentLoaded', () => {
     // 이벤트 리스너 설정
     // ------------------
     daySelector.addEventListener('change', (e) => {
-        unlockAudio(); // 사용자의 첫 터치 중 하나로 간주하고 오디오 잠금 해제
-        const day = Number(e.target.value);
-        const dayData = window.vocaData.find(d => d.day === day);
-        if (dayData) {
-            selectedDayData = { ...dayData, words: shuffleArray(dayData.words) };
-            currentIndex = 0;
-            showMeaning = false;
-            renderVocaCard();
+        unlockAudio();
+        loadDayData(Number(e.target.value));
+    });
+    
+    modeSelector.addEventListener('click', (e) => {
+        const button = e.target.closest('.mode-button');
+        if (!button || button.dataset.mode === currentMode) return;
+
+        currentMode = button.dataset.mode;
+        
+        document.querySelectorAll('.mode-button').forEach(btn => {
+            const isSelected = btn.dataset.mode === currentMode;
+            btn.classList.toggle('bg-white', isSelected);
+            btn.classList.toggle('text-blue-600', isSelected);
+            btn.classList.toggle('shadow', isSelected);
+            btn.classList.toggle('text-gray-600', !isSelected);
+            btn.classList.toggle('hover:bg-gray-300', !isSelected);
+        });
+
+        if (currentMode === 'drawer') {
+            daySelector.disabled = true;
+            normalModeButton.textContent = "돌아가기";
+            selectedDayData = { day: 'Drawer', words: shuffleArray(bookmarkedWords) };
+            daySelector.value = '';
+        } else { // 'normal' 모드로 돌아갈 때
+            daySelector.disabled = false;
+            normalModeButton.textContent = "일반 학습";
+            if (lastSelectedDay) {
+                daySelector.value = lastSelectedDay;
+                loadDayData(lastSelectedDay);
+            } else {
+                selectedDayData = null; // 선택된 Day가 없으면 초기 상태로
+                renderVocaCard(); // 카드를 초기 메시지로 업데이트
+            }
+            return; // loadDayData가 renderVocaCard를 호출하므로 여기서 종료
         }
+        
+        currentIndex = 0;
+        showMeaning = false;
+        renderVocaCard();
     });
 
     studyModeToggle.addEventListener('click', (e) => {
         const button = e.target.closest('.study-mode-button');
-        if (button) {
-            unlockAudio(); // 사용자의 첫 터치 중 하나로 간주하고 오디오 잠금 해제
-            if (button.dataset.mode !== studyMode) {
-                studyMode = button.dataset.mode;
-                showMeaning = false;
-                document.querySelectorAll('.study-mode-button').forEach(btn => {
-                    btn.classList.toggle('bg-white', btn.dataset.mode === studyMode);
-                    btn.classList.toggle('text-blue-600', btn.dataset.mode === studyMode);
-                    btn.classList.toggle('shadow', btn.dataset.mode === studyMode);
-                    btn.classList.toggle('text-gray-600', btn.dataset.mode !== studyMode);
-                    btn.classList.toggle('hover:bg-gray-300', btn.dataset.mode !== studyMode);
-                });
-                if(selectedDayData) renderVocaCard();
-            }
+        if (button && button.dataset.mode !== studyMode) {
+            unlockAudio();
+            studyMode = button.dataset.mode;
+            showMeaning = false;
+            document.querySelectorAll('.study-mode-button').forEach(btn => {
+                const isSelected = btn.dataset.mode === studyMode;
+                btn.classList.toggle('bg-white', isSelected);
+                btn.classList.toggle('text-blue-600', isSelected);
+                btn.classList.toggle('shadow', isSelected);
+                btn.classList.toggle('text-gray-600', !isSelected);
+                btn.classList.toggle('hover:bg-gray-300', !isSelected);
+            });
+            if(selectedDayData) renderVocaCard();
         }
     });
 
@@ -212,6 +309,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // 초기화 함수
     // ------------------
     const init = () => {
+        loadBookmarkedWords();
+        updateDrawerModeButton();
+
         if (window.vocaData && window.vocaData.length > 0) {
             window.vocaData.forEach(d => {
                 const option = document.createElement('option');
