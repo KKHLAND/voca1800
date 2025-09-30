@@ -257,11 +257,12 @@ document.addEventListener('DOMContentLoaded', () => {
         
         document.querySelectorAll('.mode-button').forEach(btn => {
             const isSelected = btn.dataset.mode === currentMode;
-            btn.classList.toggle('bg-white', isSelected);
-            btn.classList.toggle('text-blue-600', isSelected);
-            btn.classList.toggle('shadow', isSelected);
-            btn.classList.toggle('text-gray-600', !isSelected);
-            btn.classList.toggle('hover:bg-gray-300', !isSelected);
+            btn.classList.remove('bg-white', 'text-blue-600', 'shadow', 'text-gray-600', 'hover:bg-gray-300', 'bg-blue-600', 'text-white');
+            if (isSelected) {
+                btn.classList.add('bg-blue-600', 'text-white', 'shadow');
+            } else {
+                btn.classList.add('text-gray-600', 'hover:bg-gray-300');
+            }
         });
 
         if (currentMode === 'drawer') {
@@ -269,17 +270,17 @@ document.addEventListener('DOMContentLoaded', () => {
             normalModeButton.textContent = "돌아가기";
             selectedDayData = { day: 'Drawer', words: shuffleArray(bookmarkedWords) };
             daySelector.value = '';
-        } else { // 'normal' 모드로 돌아갈 때
+        } else {
             daySelector.disabled = false;
             normalModeButton.textContent = "일반 학습";
             if (lastSelectedDay) {
                 daySelector.value = lastSelectedDay;
                 loadDayData(lastSelectedDay);
             } else {
-                selectedDayData = null; // 선택된 Day가 없으면 초기 상태로
-                renderVocaCard(); // 카드를 초기 메시지로 업데이트
+                selectedDayData = null;
+                renderVocaCard();
             }
-            return; // loadDayData가 renderVocaCard를 호출하므로 여기서 종료
+            return; 
         }
         
         currentIndex = 0;
@@ -295,11 +296,12 @@ document.addEventListener('DOMContentLoaded', () => {
             showMeaning = false;
             document.querySelectorAll('.study-mode-button').forEach(btn => {
                 const isSelected = btn.dataset.mode === studyMode;
-                btn.classList.toggle('bg-white', isSelected);
-                btn.classList.toggle('text-blue-600', isSelected);
-                btn.classList.toggle('shadow', isSelected);
-                btn.classList.toggle('text-gray-600', !isSelected);
-                btn.classList.toggle('hover:bg-gray-300', !isSelected);
+                btn.classList.remove('bg-white', 'text-blue-600', 'shadow', 'text-gray-600', 'hover:bg-gray-300', 'bg-blue-600', 'text-white');
+                if (isSelected) {
+                    btn.classList.add('bg-blue-600', 'text-white', 'shadow');
+                } else {
+                    btn.classList.add('text-gray-600', 'hover:bg-gray-300');
+                }
             });
             if(selectedDayData) renderVocaCard();
         }
