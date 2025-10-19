@@ -289,23 +289,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     studyModeToggle.addEventListener('click', (e) => {
-        const button = e.target.closest('.study-mode-button');
-        if (button && button.dataset.mode !== studyMode) {
-            unlockAudio();
-            studyMode = button.dataset.mode;
-            showMeaning = false;
-            document.querySelectorAll('.study-mode-button').forEach(btn => {
-                const isSelected = btn.dataset.mode === studyMode;
-                btn.classList.remove('bg-white', 'text-blue-600', 'shadow', 'text-gray-600', 'hover:bg-gray-300', 'bg-blue-600', 'text-white');
-                if (isSelected) {
-                    btn.classList.add('bg-blue-600', 'text-white', 'shadow');
-                } else {
-                    btn.classList.add('text-gray-600', 'hover:bg-gray-300');
-                }
-            });
-            if(selectedDayData) renderVocaCard();
-        }
-    });
+    const button = e.target.closest('.study-mode-button');
+    if (button && button.dataset.mode !== studyMode) {
+        unlockAudio();
+        studyMode = button.dataset.mode;
+        showMeaning = false;
+        document.querySelectorAll('.study-mode-button').forEach(btn => {
+            const isSelected = btn.dataset.mode === studyMode;
+            // 기존 blue 클래스와 새로운 green 클래스를 모두 제거 리스트에 추가
+            btn.classList.remove('bg-blue-600', 'text-blue-600', 'bg-green-600', 'shadow', 'text-gray-600', 'hover:bg-gray-300', 'text-white');
+            if (isSelected) {
+                // 선택된 버튼에 green 클래스 추가
+                btn.classList.add('bg-green-600', 'text-white', 'shadow');
+            } else {
+                btn.classList.add('text-gray-600', 'hover:bg-gray-300');
+            }
+        });
+        if(selectedDayData) renderVocaCard();
+            }
+        });
 
     // ------------------
     // 초기화 함수
