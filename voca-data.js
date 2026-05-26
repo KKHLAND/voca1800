@@ -1,8 +1,8 @@
 
 window.vocaData = [
   {
-    day: 1,
-    words: [
+    "day": 1,
+    "words": [
       { en: 'superior', ko: 'a. 우월한, 더 나은, 우세한', phonetic: '', sentence: "This new model is structurally superior to the older one.", translation: "이 새 모델은 구형 모델보다 구조적으로 우수하다." },
       { en: 'chance', ko: 'n. 기회, 우연, 가능성', phonetic: '', sentence: "I didn't have a chance to speak with him.", translation: "나는 그와 대화할 기회가 없었다." },
       { en: 'diversity', ko: 'n. 다양성', phonetic: '', sentence: "Our school encourages cultural diversity.", translation: "우리 학교는 문화적 다양성을 장려한다." },
@@ -18,7 +18,7 @@ window.vocaData = [
       { en: 'property', ko: 'n. 재산, 소유물, 속성', phonetic: '', sentence: "This building is private property.", translation: "이 건물은 사유 재산이다." },
       { en: 'manuscript', ko: 'n. 원고', phonetic: '', sentence: "The author submitted his manuscript to the publisher.", translation: "작가는 출판사에 원고를 제출했다." },
       { en: 'loan', ko: 'n. 대출금, 대출', phonetic: '', sentence: "He took out a bank loan to buy a car.", translation: "그는 차를 사기 위해 은행 대출을 받았다." },
-      { en: 'submit', ko: 'v. 제출하다, 항복하다', phonetic: '', sentence: "Please submit your reports by Friday.", translation: "금요일까지 보고서를 제출해 주세요." },
+      { en: 'submit', ko: 'v. 제출하다, 항복하다', phonetic: '', sentence: "Please submit your reports by Fri"day".", translation: "금요일까지 보고서를 제출해 주세요." },
       { en: 'compensation', ko: 'n. 보상', phonetic: '', sentence: "He demanded compensation for his injuries.", translation: "그는 부상에 대한 보상을 요구했다." },
       { en: 'dizzy', ko: 'a. 어지러운', phonetic: '', sentence: "I felt dizzy after getting off the roller coaster.", translation: "롤러코스터에서 내린 후 어지러웠다." },
       { en: 'repay', ko: 'v. 상환하다, 갚다, 보답하다', phonetic: '', sentence: "It will take years to repay the debt.", translation: "그 빚을 갚으려면 수년이 걸릴 것이다." },
@@ -36,8 +36,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 2,
-    words: [
+    "day": 2,
+    "words": [
       { en: 'abstract', ko: 'a. 추상적인', phonetic: '', sentence: "Truth and beauty are abstract concepts.", translation: "진리와 아름다움은 추상적인 개념이다." },
       { en: 'civilization', ko: 'n. 문명', phonetic: '', sentence: "The Maya created a highly advanced civilization.", translation: "마야인들은 고도로 발달한 문명을 창조했다." },
       { en: 'flourish', ko: 'v. 번영[번성]하다, 무성하다, 우거지다', phonetic: '', sentence: "The business continued to flourish under his leadership.", translation: "그의 지도 아래 사업은 계속 번창했다." },
@@ -58,7 +58,7 @@ window.vocaData = [
       { en: 'microclimate', ko: 'n. 미기후(微氣候: 특히 주변 다른 지역과는 다른, 특정 좁은 지역의 기후)', phonetic: '', sentence: "The valley has its own unique microclimate.", translation: "그 계곡은 독특한 자체 미기후를 가지고 있다." },
       { en: 'concentrate', ko: 'v. 농축시키다, 집중하다', phonetic: '', sentence: "It's hard to concentrate when it's so noisy.", translation: "이렇게 시끄러울 때는 집중하기 어렵다." },
       { en: 'irony', ko: 'n. 아이러니, 얄궂음, 반어법', phonetic: '', sentence: "The irony is that the fire station burned down.", translation: "아이러니하게도 소방서가 불타버렸다." },
-      { en: 'commute', ko: 'n. 통근, 출퇴근 v. 통근하다', phonetic: '', sentence: "He has a long commute to work every day.", translation: "그는 매일 긴 출퇴근을 한다." },
+      { en: 'commute', ko: 'n. 통근, 출퇴근 v. 통근하다', phonetic: '', sentence: "He has a long commute to work every "day".", translation: "그는 매일 긴 출퇴근을 한다." },
       { en: 'polite', ko: 'a. 정중한, 예의 바른', phonetic: '', sentence: "It is polite to say thank you.", translation: "감사하다고 말하는 것이 예의 바른 것이다." },
       { en: 'unassuming', ko: 'a. 겸손한', phonetic: '', sentence: "Despite his fame, he remains an unassuming person.", translation: "그의 명성에도 불구하고 그는 여전히 겸손한 사람이다." },
       { en: 'maximize', ko: 'v. 최대화하다, 극대화하다', phonetic: '', sentence: "We need to maximize our profits.", translation: "우리는 우리의 이익을 극대화해야 한다." },
@@ -71,8 +71,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 3,
-    words: [
+    "day": 3,
+    "words": [
       { en: 'destructive', ko: 'a. 파괴적인', phonetic: '', sentence: "The hurricane was highly destructive to the coastal town.", translation: "그 허리케인은 해안 마을에 매우 파괴적이었다." },
       { en: 'misleading', ko: 'a. 오해의 소지가 있는, 오도하는', phonetic: '', sentence: "The advertisement was criticized for being misleading.", translation: "그 광고는 오해의 소지가 있다는 이유로 비판받았다." },
       { en: 'normal', ko: 'a. 정상적인, 당연한', phonetic: '', sentence: "It is normal to feel nervous before an exam.", translation: "시험 전에 긴장하는 것은 정상이다." },
@@ -106,8 +106,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 4,
-    words: [
+    "day": 4,
+    "words": [
       { en: 'operation', ko: 'n. 작용, 운영, 경영, 작업, 수술', phonetic: '', sentence: "The factory will begin operation next month.", translation: "그 공장은 다음 달에 가동(운영)을 시작할 것이다." },
       { en: 'interweave', ko: 'v. 얽다, 엮다, 섞어 짜다', phonetic: '', sentence: "The author interweaves multiple storylines in his novel.", translation: "작가는 소설에서 여러 줄거리를 엮어낸다." },
       { en: 'representation', ko: 'n. 표상, 대표성, 표현', phonetic: '', sentence: "The painting is a realistic representation of a stormy sea.", translation: "그 그림은 폭풍우 치는 바다를 사실적으로 표현한 것이다." },
@@ -141,8 +141,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 5,
-    words: [
+    "day": 5,
+    "words": [
       { en: 'phenomenon', ko: 'n. 현상 ( pl. phenomena )', phonetic: '', sentence: "Snow in summer is a very rare phenomenon here.", translation: "여름에 눈이 내리는 것은 이곳에서 매우 드문 현상이다." },
       { en: 'construct', ko: 'v. 건설[건축]하다, 구성하다 n. 개념, 생각, 구성체', phonetic: '', sentence: "The city plans to construct a new bridge.", translation: "도시는 새로운 다리를 건설할 계획이다." },
       { en: 'entail', ko: 'v. 수반하다', phonetic: '', sentence: "Starting a new business entails a lot of risk.", translation: "새로운 사업을 시작하는 것은 많은 위험을 수반한다." },
@@ -176,8 +176,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 6,
-    words: [
+    "day": 6,
+    "words": [
       { en: 'escape', ko: 'v. 벗어나다, 탈출하다 n. 탈출', phonetic: '', sentence: "The prisoner managed to escape from jail.", translation: "그 죄수는 감옥에서 가까스로 탈출했다." },
       { en: 'incidence', ko: 'n. 발생[발병]률, 빈도, 발생 정도', phonetic: '', sentence: "There is a high incidence of asthma in this area.", translation: "이 지역은 천식 발병률이 높다." },
       { en: 'inner', ko: 'a. 내면의, 내부의', phonetic: '', sentence: "Yoga helps me find inner peace.", translation: "요가는 내가 내면의 평화를 찾는 데 도움을 준다." },
@@ -211,8 +211,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 7,
-    words: [
+    "day": 7,
+    "words": [
       { en: 'remind', ko: 'v. 상기시키다', phonetic: '', sentence: "Please remind me to call my mother tonight.", translation: "오늘 밤 어머니께 전화하라고 나에게 상기시켜 줘." },
       { en: 'faculty', ko: 'n. 기능, 능력, 교직원, 학부', phonetic: '', sentence: "The university faculty has agreed to the new curriculum.", translation: "대학 교직원들은 새 교육과정에 동의했다." },
       { en: 'remedy', ko: 'n. 치료(약), 해결책', phonetic: '', sentence: "Honey and lemon is a good remedy for a sore throat.", 인두염(목 아픔)을 위한 좋은 치료약은 꿀과 레몬이다.", translation: "꿀과 레몬은 인후염에 좋은 치료약이다." },
@@ -226,7 +226,7 @@ window.vocaData = [
       { en: 'analysis', ko: 'n. 분석', phonetic: '', sentence: "The data requires careful analysis.", translation: "그 데이터는 주의 깊은 분석을 필요로 한다." },
       { en: 'revenge', ko: 'n. 복수, 보복', phonetic: '', sentence: "He sought revenge for the murder of his friend.", translation: "그는 친구의 죽음에 대한 복수를 원했다." },
       { en: 'undergo', ko: 'v. 거치다, 겪다', phonetic: '', sentence: "She had to undergo a difficult surgery.", translation: "그녀는 어려운 수술을 겪어야 했다." },
-      { en: 'supplement', ko: 'n. 보충(제) v. 보충하다', phonetic: '', sentence: "He takes a vitamin supplement every day.", translation: "그는 매일 비타민 보충제를 먹는다." },
+      { en: 'supplement', ko: 'n. 보충(제) v. 보충하다', phonetic: '', sentence: "He takes a vitamin supplement every "day".", translation: "그는 매일 비타민 보충제를 먹는다." },
       { en: 'direction', ko: 'n. 지휘, 감독, 방향', phonetic: '', sentence: "They walked away in the opposite direction.", translation: "그들은 반대 방향으로 걸어갔다." },
       { en: 'quantity', ko: 'n. 양', phonetic: '', sentence: "Quality is more important than quantity.", translation: "양이 아니라 질이 더 중요하다." },
       { en: 'automatic', ko: 'a. 자동적인, 무의식적인', phonetic: '', sentence: "Breathing is an automatic process.", translation: "호흡은 무의식적인(자동적인) 과정이다." },
@@ -246,8 +246,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 8,
-    words: [
+    "day": 8,
+    "words": [
       { en: 'adherence', ko: 'n. 지속성, 집착, 고수', phonetic: '', sentence: "Strict adherence to the rules is required here.", translation: "여기서는 규칙의 엄격한 고수가 요구된다." },
       { en: 'cue', ko: 'v. 유도하다, 신호하다 n. 단서, 실마리', phonetic: '', sentence: "His nod was the cue for the music to begin.", translation: "그의 끄덕임이 음악을 시작하라는 신호였다." },
       { en: 'sufficient', ko: 'a. 충분한', phonetic: '', sentence: "We don't have sufficient evidence to prove his guilt.", translation: "우리에게는 그의 유죄를 입증할 충분한 증거가 없다." },
@@ -281,8 +281,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 9,
-    words: [
+    "day": 9,
+    "words": [
       { en: 'execution', ko: 'n. 수행, 실행', phonetic: '', sentence: "His plan was good, but the execution was poor.", translation: "그의 계획은 좋았지만 실행이 형편없었다." },
       { en: 'imitate', ko: 'v. 모방하다, 흉내 내다', phonetic: '', sentence: "Monkeys love to imitate human behavior.", translation: "원숭이들은 인간의 행동을 흉내 내기를 좋아한다." },
       { en: 'presentation', ko: 'n. 표출, 표현, 발표, 제출', phonetic: '', sentence: "She gave an excellent presentation at the meeting.", translation: "그녀는 회의에서 훌륭한 발표를 했다." },
@@ -316,8 +316,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 10,
-    words: [
+    "day": 10,
+    "words": [
       { en: 'necessitate', ko: 'v. 필요로 하다', phonetic: '', sentence: "The severe damage will necessitate extensive repairs.", translation: "심각한 손상은 대규모 수리를 필요로 할 것이다." },
       { en: 'bygone', ko: 'a. 지나간, 과거의', phonetic: '', sentence: "The building is a reminder of a bygone era.", translation: "그 건물은 지나간 시대를 떠올리게 하는 것이다." },
       { en: 'crude', ko: 'a. 조잡한, 대충의, 미가공의', phonetic: '', sentence: "He built a crude shelter out of branches.", translation: "그는 나뭇가지로 조잡한 은신처를 지었다." },
@@ -351,8 +351,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 11,
-    words: [
+    "day": 11,
+    "words": [
       { en: 'custom', ko: 'n. 관행, 관습', phonetic: '', sentence: "It is a local custom to bow when greeting someone.", translation: "인사할 때 절을 하는 것은 지역 관습이다." },
       { en: 'escalation', ko: 'n. 고조, 상승, 격화', phonetic: '', sentence: "The escalation of prices is causing concern.", translation: "물가의 상승(고조)이 우려를 낳고 있다." },
       { en: 'isolation', ko: 'n. 격리, 고립', phonetic: '', sentence: "The patient was kept in strict isolation.", translation: "그 환자는 엄격한 격리 상태로 유지되었다." },
@@ -386,8 +386,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 12,
-    words: [
+    "day": 12,
+    "words": [
       { en: 'liquid', ko: 'a. 액체의, 액체 형태의 n. 액체', phonetic: '', sentence: "Water is a liquid at room temperature.", translation: "물은 실온에서 액체이다." },
       { en: 'orbit', ko: 'n. 궤도', phonetic: '', sentence: "The satellite was launched into Earth's orbit.", translation: "그 위성은 지구 궤도로 발사되었다." },
       { en: 'frozen', ko: 'a. 얼어붙은, 냉동된', phonetic: '', sentence: "They walked carefully across the frozen lake.", translation: "그들은 얼어붙은 호수를 조심스럽게 가로질러 걸었다." },
@@ -421,8 +421,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 13,
-    words: [
+    "day": 13,
+    "words": [
       { en: 'character', ko: 'n. 등장인물, 성격', phonetic: '', sentence: "He is the main character of the novel.", translation: "그는 소설의 주요 등장인물이다." },
       { en: 'spacious', ko: 'a. 넓은, 널찍한', phonetic: '', sentence: "The apartment is very spacious and bright.", translation: "그 아파트는 매우 넓고 밝다." },
       { en: 'tropical', ko: 'a. 열대의, 열대 지방의', phonetic: '', sentence: "Bananas grow well in tropical climates.", translation: "바나나는 열대 기후에서 잘 자란다." },
@@ -456,8 +456,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 14,
-    words: [
+    "day": 14,
+    "words": [
       { en: 'exposure', ko: 'n. 노출, 접하게 함', phonetic: '', sentence: "Prolonged exposure to the sun can damage your skin.", translation: "햇빛에 장기간 노출되는 것은 피부를 손상시킬 수 있다." },
       { en: 'strategy', ko: 'n. 전략', phonetic: '', sentence: "We need a new marketing strategy.", translation: "우리는 새로운 마케팅 전략이 필요하다." },
       { en: 'impulse', ko: 'n. 충동', phonetic: '', sentence: "He bought the car on a sudden impulse.", translation: "그는 갑작스러운 충동으로 그 차를 샀다." },
@@ -491,8 +491,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 15,
-    words: [
+    "day": 15,
+    "words": [
       { en: 'instruction', ko: 'n. 수업, 교육, 지시, 사용법', phonetic: '', sentence: "Read the instruction manual carefully before use.", translation: "사용하기 전에 사용 설명서를 주의 깊게 읽으십시오." },
       { en: 'gradual', ko: 'a. 점진적인, 단계적인, 서서히 하는', phonetic: '', sentence: "There has been a gradual improvement in her health.", translation: "그녀의 건강에 점진적인 호전이 있었다." },
       { en: 'prevention', ko: 'n. 예방, 방지', phonetic: '', sentence: "Crime prevention is a major goal for the police.", translation: "범죄 예방은 경찰의 주요 목표이다." },
@@ -526,8 +526,8 @@ window.vocaData = [
     ],
   }
   {
-    day: 16,
-    words: [
+    "day": 16,
+    "words": [
       { en: 'exemplary', ko: 'a. 모범적인, 전형적인, 좋은 예가 되는', phonetic: '', sentence: "His behavior in school was exemplary.", translation: "그의 학교에서의 행동은 모범적이었다." },
       { en: 'straightforward', ko: 'a. 있는 그대로의, 솔직한, 명확한', phonetic: '', sentence: "The instructions for this game are quite straightforward.", translation: "이 게임의 설명서는 꽤 명확하다." },
       { en: 'function', ko: 'v. 기능하다 n. 기능', phonetic: '', sentence: "The main function of the heart is to pump blood.", translation: "심장의 주요 기능은 피를 뿜어내는 것이다." },
@@ -544,7 +544,7 @@ window.vocaData = [
       { en: 'military', ko: 'a. 군사의, 무력의 n. 군인들, 군대', phonetic: '', sentence: "He served in the military for three years.", translation: "그는 3년 동안 군대에서 복무했다." },
       { en: 'permanent', ko: 'a. 영구적인, 불변의, 상설의', phonetic: '', sentence: "Smoking can cause permanent damage to your lungs.", translation: "흡연은 폐에 영구적인 손상을 일으킬 수 있다." },
       { en: 'purchase', ko: 'n. 구매 v. 구매하다, 사다', phonetic: '', sentence: "Where did you purchase that beautiful dress?", translation: "그 아름다운 드레스를 어디서 구매했나요?" },
-      { en: 'arrange', ko: 'v. 배열하다, 준비하다, 정돈하다, 정리하다', phonetic: '', sentence: "I will arrange a meeting for next Tuesday.", translation: "다음 주 화요일에 회의를 준비(마련)하겠습니다." },
+      { en: 'arrange', ko: 'v. 배열하다, 준비하다, 정돈하다, 정리하다', phonetic: '', sentence: "I will arrange a meeting for next Tues"day".", translation: "다음 주 화요일에 회의를 준비(마련)하겠습니다." },
       { en: 'strengthen', ko: 'v. 강화하다, 튼튼하게 하다', phonetic: '', sentence: "These exercises will help strengthen your back muscles.", translation: "이 운동들은 등 근육을 강화하는 데 도움이 될 것이다." },
       { en: 'emotional', ko: 'a. 정서적인, 감정의, 감정적인', phonetic: '', sentence: "The movie was so emotional that I cried.", translation: "그 영화는 너무 감동적(감정적)이어서 나는 울었다." },
       { en: 'authority', ko: 'n. 권위, 권위자, (주로 복수로) 당국', phonetic: '', sentence: "The teacher speaks with absolute authority in the classroom.", translation: "선생님은 교실에서 절대적인 권위를 가지고 말한다." },
@@ -561,8 +561,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 17,
-    words: [
+    "day": 17,
+    "words": [
       { en: 'regret', ko: 'v. 후회하다, 유감스럽게 생각하다 n. 후회, 유감', phonetic: '', sentence: "I regret not studying harder for the exam.", translation: "나는 시험 공부를 더 열심히 하지 않은 것을 후회한다." },
       { en: 'haste', ko: 'n. 서두름, 급함', phonetic: '', sentence: "In his haste to leave, he forgot his keys.", translation: "그는 떠나려고 서두르다가 열쇠를 잊었다." },
       { en: 'keen', ko: 'a. 예리한, 날카로운, 열망하는', phonetic: '', sentence: "Dogs have a very keen sense of smell.", translation: "개들은 매우 예리한 후각을 가지고 있다." },
@@ -596,8 +596,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 18,
-    words: [
+    "day": 18,
+    "words": [
       { en: 'harsh', ko: 'a. 가혹한, 냉혹한, 혹독한', phonetic: '', sentence: "The harsh winter ruined the crops.", translation: "혹독한 겨울이 농작물을 망쳤다." },
       { en: 'theatrical', ko: 'a. 연극의, 극장의 n. 연극', phonetic: '', sentence: "She has a very theatrical way of speaking.", translation: "그녀는 매우 연극적인 말하기 방식을 가졌다." },
       { en: 'investigate', ko: 'v. 조사하다, 수사하다', phonetic: '', sentence: "The police are investigating the cause of the fire.", translation: "경찰이 화재의 원인을 수사하고 있다." },
@@ -625,14 +625,14 @@ window.vocaData = [
       { en: 'content', ko: 'n. 콘텐츠, 내용(물), 목차 a. 만족하는 v. 만족시키다', phonetic: '', sentence: "She is perfectly content with her simple life.", translation: "그녀는 자신의 단순한 삶에 완벽히 만족한다." },
       { en: 'radical', ko: 'a. 극단적인, 근본적인', phonetic: '', sentence: "The new president proposed some radical changes.", translation: "새 대통령은 몇 가지 근본적인(급진적인) 변화를 제안했다." },
       { en: 'instrument', ko: 'n. 악기, 도구, 기구', phonetic: '', sentence: "Do you play any musical instrument?", translation: "다루는 악기가 있나요?" },
-      { en: 'derive', ko: 'v. 유래하다, 끌어내다', phonetic: '', sentence: "Many English words derive from Latin.", translation: "많은 영단어들이 라틴어에서 유래한다." },
+      { en: 'derive', ko: 'v. 유래하다, 끌어내다', phonetic: '', sentence: "Many English "words" derive from Latin.", translation: "많은 영단어들이 라틴어에서 유래한다." },
       { en: 'acquaintance', ko: 'n. 지인, 아는 사람, 면식', phonetic: '', sentence: "He is a business acquaintance of mine.", translation: "그는 나의 비즈니스 지인이다." },
       { en: 'consensus', ko: 'n. 합의, 컨센서스', phonetic: '', sentence: "The committee reached a consensus on the issue.", translation: "위원회는 그 문제에 대해 합의에 도달했다." }
     ],
   },
   {
-    day: 19,
-    words: [
+    "day": 19,
+    "words": [
       { en: 'popularity', ko: 'n. 유행, 인기, 대중성', phonetic: '', sentence: "The band's popularity grew rapidly.", translation: "그 밴드의 인기는 빠르게 상승했다." },
       { en: 'unique', ko: 'a. 고유한, 독특한', phonetic: '', sentence: "Every person's fingerprint is unique.", translation: "모든 사람의 지문은 고유하다." },
       { en: 'emperor', ko: 'n. 황제, 제왕', phonetic: '', sentence: "The emperor ruled the vast empire with absolute power.", translation: "황제는 절대적인 권력으로 거대한 제국을 다스렸다." },
@@ -666,10 +666,10 @@ window.vocaData = [
     ],
   },
   {
-    day: 20,
-    words: [
+    "day": 20,
+    "words": [
       { en: 'intellectual', ko: 'a. 지적인, 지능의 n. 지식인', phonetic: '', sentence: "He enjoys reading intellectual books.", translation: "그는 지적인 책을 읽는 것을 즐긴다." },
-      { en: 'typical', ko: 'a. 전형적인, 보통의', phonetic: '', sentence: "It was a typical summer day, hot and humid.", translation: "덥고 습한 전형적인 여름날이었다." },
+      { en: 'typical', ko: 'a. 전형적인, 보통의', phonetic: '', sentence: "It was a typical summer "day", hot and humid.", translation: "덥고 습한 전형적인 여름날이었다." },
       { en: 'originality', ko: 'n. 독창성, 창의성', phonetic: '', sentence: "The writer's originality shines in this novel.", translation: "이 소설에서 작가의 독창성이 빛난다." },
       { en: 'commonplace', ko: 'a. 평범한, 매우 흔한 n. 흔한 일', phonetic: '', sentence: "Smartphones have become commonplace in our society.", translation: "스마트폰은 우리 사회에서 매우 흔한 것이 되었다." },
       { en: 'maximum', ko: 'n. 최대, 최대한(도)', phonetic: '', sentence: "The car has a maximum speed of 200 km/h.", translation: "그 차의 최고(최대) 속도는 시속 200킬로미터이다." },
@@ -701,9 +701,9 @@ window.vocaData = [
     ],
   },
   {
-    day: 21,
-    words: [
-      { en: 'annual', ko: 'a. 연간의, 연례의, 매년의 n. 연감, 일년생 생물', phonetic: '', sentence: "The company's annual report was published yesterday.", translation: "그 회사의 연례 보고서가 어제 발행되었다." },
+    "day": 21,
+    "words": [
+      { en: 'annual', ko: 'a. 연간의, 연례의, 매년의 n. 연감, 일년생 생물', phonetic: '', sentence: "The company's annual report was published yester"day".", translation: "그 회사의 연례 보고서가 어제 발행되었다." },
       { en: 'formulate', ko: 'v. 만들어 내다, 표현하다', phonetic: '', sentence: "We need to formulate a new strategy to increase sales.", translation: "우리는 매출을 늘리기 위해 새로운 전략을 만들어 내야 한다." },
       { en: 'coordination', ko: 'n. 조화, 조정, 조직', phonetic: '', sentence: "The dance requires good hand-eye coordination.", translation: "그 춤은 훌륭한 손과 눈의 조화(협응)를 필요로 한다." },
       { en: 'constitute', ko: 'v. 구성하다, (~이) 되다', phonetic: '', sentence: "Women constitute about 50 percent of the workforce.", translation: "여성이 노동력의 약 50퍼센트를 구성한다." },
@@ -736,8 +736,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 22,
-    words: [
+    "day": 22,
+    "words": [
       { en: 'successive', ko: 'a. 연속된, 잇따른', phonetic: '', sentence: "Our team won three successive championships.", translation: "우리 팀은 3회 연속 우승을 차지했다." },
       { en: 'reassure', ko: 'v. 안심시키다', phonetic: '', sentence: "The doctor tried to reassure the anxious patient.", translation: "의사는 불안해하는 환자를 안심시키려 노력했다." },
       { en: 'invisible', ko: 'a. 보이지 않는, 감추어진', phonetic: '', sentence: "Bacteria are invisible to the naked eye.", translation: "박테리아는 육안으로는 보이지 않는다." },
@@ -771,8 +771,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 23,
-    words: [
+    "day": 23,
+    "words": [
       { en: 'artificial', ko: 'a. 인공의, 인공적인', phonetic: '', sentence: "This drink contains no artificial flavors.", translation: "이 음료는 인공적인 맛을 포함하지 않는다." },
       { en: 'descriptive', ko: 'a. 기술적인, 묘사하는, 서술하는', phonetic: '', sentence: "The novel contains highly descriptive language.", translation: "그 소설은 고도로 묘사적인 언어를 포함하고 있다." },
       { en: 'privileged', ko: 'a. 특권의, 특별히 선택된', phonetic: '', sentence: "She comes from a very privileged background.", translation: "그녀는 매우 특권적인 배경을 가지고 있다." },
@@ -806,10 +806,10 @@ window.vocaData = [
     ],
   },
   {
-    day: 24,
-    words: [
+    "day": 24,
+    "words": [
       { en: 'progress', ko: 'n. 진보, 진행 상황 v. 발전하다, 전진하다', phonetic: '', sentence: "She is making steady progress in her studies.", translation: "그녀는 학업에서 꾸준한 진보를 이루고 있다." },
-      { en: 'productive', ko: 'a. 생산의, 생산적인', phonetic: '', sentence: "We had a very productive meeting today.", translation: "우리는 오늘 매우 생산적인 회의를 가졌다." },
+      { en: 'productive', ko: 'a. 생산의, 생산적인', phonetic: '', sentence: "We had a very productive meeting to"day".", translation: "우리는 오늘 매우 생산적인 회의를 가졌다." },
       { en: 'legitimate', ko: 'v. 정당화하다 a. 타당한, 정당한', phonetic: '', sentence: "He had a legitimate reason for missing the meeting.", translation: "그는 회의에 불참한 정당한 이유가 있었다." },
       { en: 'measure', ko: 'v. 측정하다 n. 조치', phonetic: '', sentence: "We must take immediate measures to stop the leak.", translation: "우리는 누출을 막기 위해 즉각적인 조치를 취해야 한다." },
       { en: 'detached', ko: 'a. 분리된, 떨어져 있는, 치우치지 않는', phonetic: '', sentence: "He tried to remain emotionally detached from the situation.", translation: "그는 감정적으로 그 상황에서 떨어져 있으려고 노력했다." },
@@ -841,8 +841,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 25,
-    words: [
+    "day": 25,
+    "words": [
       { en: 'drip', ko: 'n. 물방울 v. (똑똑) 떨어지다', phonetic: '', sentence: "Water continued to drip from the leaking pipe.", translation: "새는 파이프에서 물이 계속 똑똑 떨어졌다." },
       { en: 'accomplish', ko: 'v. 달성하다, 완수하다', phonetic: '', sentence: "You can accomplish anything if you work hard.", translation: "열심히 일하면 무엇이든 달성할 수 있다." },
       { en: 'float', ko: 'v. 떠다니다, 뜨다, 띄우다', phonetic: '', sentence: "The wood will float on water.", translation: "나무는 물 위에 뜰 것이다." },
@@ -866,7 +866,7 @@ window.vocaData = [
       { en: 'pose', ko: 'v. 제기하다 n. 자세, 포즈', phonetic: '', sentence: "Pollution poses a serious threat to our health.", translation: "오염은 우리 건강에 심각한 위협을 제기한다." },
       { en: 'auditory', ko: 'a. 청각적인', phonetic: '', sentence: "The child has an auditory processing disorder.", translation: "그 아이는 청각 처리 장애가 있다." },
       { en: 'dialect', ko: 'n. 방언, 지방어 a. 방언의', phonetic: '', sentence: "They spoke a dialect I couldn't understand.", translation: "그들은 내가 이해할 수 없는 방언을 사용했다." },
-      { en: 'highlight', ko: 'v. 부각시키다, 강조하다 n. 가장 밝은 부분, 하이라이트', phonetic: '', sentence: "Please highlight the important words in yellow.", translation: "중요한 단어들을 노란색으로 강조해 주세요." },
+      { en: 'highlight', ko: 'v. 부각시키다, 강조하다 n. 가장 밝은 부분, 하이라이트', phonetic: '', sentence: "Please highlight the important "words" in yellow.", translation: "중요한 단어들을 노란색으로 강조해 주세요." },
       { en: 'descendent', ko: 'a. 후대의, 전해 내려오는, 낙하하는', phonetic: '', sentence: "They are descendent from a royal family.", translation: "그들은 왕실의 후손(후대)이다." },
       { en: 'emerging', ko: 'a. 새로 등장하는, 새로 나타나는', phonetic: '', sentence: "We invest in emerging markets around the world.", translation: "우리는 전 세계의 신흥(새로 등장하는) 시장에 투자한다." },
       { en: 'formative', ko: 'a. 형성하는, 형태를 구성하는', phonetic: '', sentence: "These are the formative years of a child's character.", translation: "이 시기는 아이의 성격이 형성되는 시기이다." },
@@ -876,8 +876,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 26,
-    words: [
+    "day": 26,
+    "words": [
       { en: 'invasion', ko: 'n. 침공, 침입', phonetic: '', sentence: "The country was preparing for an invasion.", translation: "그 나라는 침공에 대비하고 있었다." },
       { en: 'wholesaler', ko: 'n. 도매상, 도매업자', phonetic: '', sentence: "The retailer buys goods from a large wholesaler.", translation: "소매업자는 큰 도매상으로부터 물건을 산다." },
       { en: 'trunk', ko: 'n. 줄기, 몸통', phonetic: '', sentence: "The tree had a massive, thick trunk.", translation: "그 나무는 거대하고 두꺼운 몸통(줄기)을 가지고 있었다." },
@@ -911,8 +911,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 27,
-    words: [
+    "day": 27,
+    "words": [
       { en: 'implication', ko: 'n. 영향, 시사점, 함축', phonetic: '', sentence: "We need to consider the implication of these findings.", translation: "우리는 이 연구 결과의 시사점(영향)을 고려해야 한다." },
       { en: 'reply', ko: 'v. 대답하다, 응답하다 n. 답변, 응답', phonetic: '', sentence: "I am still waiting for his reply to my email.", translation: "나는 아직 내 이메일에 대한 그의 답장을 기다리고 있다." },
       { en: 'firm', ko: 'n. 기업, 회사 a. 단호한, 단단한', phonetic: '', sentence: "He works for a well-known law firm.", translation: "그는 유명한 법률 회사에서 일한다." },
@@ -946,8 +946,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 28,
-    words: [
+    "day": 28,
+    "words": [
       { en: 'compound', ko: 'n. 화합물, 혼합물', phonetic: '', sentence: "Water is a compound of hydrogen and oxygen.", translation: "물은 수소와 산소의 화합물이다." },
       { en: 'political', ko: 'a. 정치적인, 정치에 관한', phonetic: '', sentence: "They discussed various political issues.", translation: "그들은 다양한 정치적 문제들을 논의했다." },
       { en: 'division', ko: 'n. 구분, 부문, 분할', phonetic: '', sentence: "The division of labor increased productivity.", translation: "노동의 분할(분업)이 생산성을 높였다." },
@@ -981,10 +981,10 @@ window.vocaData = [
     ],
   },
   {
-    day: 29,
-    words: [
+    "day": 29,
+    "words": [
       { en: 'overwhelming', ko: 'a. 압도적인, 저항할 수 없는', phonetic: '', sentence: "The team won with an overwhelming majority.", translation: "그 팀은 압도적인 다수로 승리했다." },
-      { en: 'liberation', ko: 'n. 해방, 석방', phonetic: '', sentence: "The day marks the liberation of the country from colonial rule.", translation: "그날은 식민 통치로부터 그 나라가 해방된 것을 기념한다." },
+      { en: 'liberation', ko: 'n. 해방, 석방', phonetic: '', sentence: "The "day" marks the liberation of the country from colonial rule.", translation: "그날은 식민 통치로부터 그 나라가 해방된 것을 기념한다." },
       { en: 'longevity', ko: 'n. 수명, 장수', phonetic: '', sentence: "The Japanese are known for their longevity.", translation: "일본인들은 장수하는 것으로 알려져 있다." },
       { en: 'rival', ko: 'a. 경쟁적인, 경쟁자의 n. 경쟁자 v. 경쟁하다', phonetic: '', sentence: "The two companies have been rival for years.", translation: "두 회사는 수년 동안 경쟁 관계에 있었다." },
       { en: 'resilience', ko: 'n. 회복 탄력성, 회복력, 탄력', phonetic: '', sentence: "Children often show incredible resilience to trauma.", translation: "아이들은 종종 트라우마에 대해 놀라운 회복 탄력성을 보여준다." },
@@ -1016,8 +1016,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 30,
-    words: [
+    "day": 30,
+    "words": [
       { en: 'comparison', ko: 'n. 비교, 비유', phonetic: '', sentence: "By comparison, the new system is much faster.", translation: "비교해 보면, 새 시스템이 훨씬 더 빠르다." },
       { en: 'jury', ko: 'n. 배심원(단), 심사 위원', phonetic: '', sentence: "The jury found the defendant not guilty.", translation: "배심원단은 피고에게 무죄를 선고했다." },
       { en: 'implement', ko: 'v. 시행하다, 이행하다 n. 도구, 기구', phonetic: '', sentence: "The government will implement a new education policy.", translation: "정부는 새로운 교육 정책을 시행할 것이다." },
@@ -1051,8 +1051,8 @@ window.vocaData = [
     ],
   }
   {
-    day: 31,
-    words: [
+    "day": 31,
+    "words": [
       { en: 'adopt', ko: 'v. 채택하다, 받아들이다', phonetic: '', sentence: "The school decided to adopt a new teaching method.", translation: "학교는 새로운 교수법을 채택하기로 결정했다." },
       { en: 'absorb', ko: 'v. 흡수하다, 몰입시키다', phonetic: '', sentence: "Sponges quickly absorb water.", translation: "스펀지는 물을 빠르게 흡수한다." },
       { en: 'discrimination', ko: 'n. 차별, 구별', phonetic: '', sentence: "The law prohibits discrimination based on race or gender.", translation: "그 법은 인종이나 성별에 따른 차별을 금지한다." },
@@ -1086,11 +1086,11 @@ window.vocaData = [
     ],
   },
   {
-    day: 32,
-    words: [
+    "day": 32,
+    "words": [
       { en: 'hierarchy', ko: 'n. 계층, 계급', phonetic: '', sentence: "The corporate hierarchy was strictly observed.", translation: "회사의 계층이 엄격하게 지켜졌다." },
       { en: 'precise', ko: 'a. 정확한, 정밀한', phonetic: '', sentence: "Please give me a precise estimate of the costs.", translation: "비용에 대한 정확한 견적을 내주세요." },
-      { en: 'sprout', ko: 'v. 나게 하다, 발아하다 n. 새싹, 발아', phonetic: '', sentence: "The seeds will begin to sprout in a few days.", translation: "씨앗들은 며칠 안에 발아하기 시작할 것이다." },
+      { en: 'sprout', ko: 'v. 나게 하다, 발아하다 n. 새싹, 발아', phonetic: '', sentence: "The seeds will begin to sprout in a few "day"s.", translation: "씨앗들은 며칠 안에 발아하기 시작할 것이다." },
       { en: 'transmit', ko: 'v. 전달하다, 보내다, 발송하다', phonetic: '', sentence: "Mosquitoes can transmit dangerous diseases.", translation: "모기는 위험한 질병을 전달할 수 있다." },
       { en: 'sponsor', ko: 'v. 주관하다, 후원하다 n. 후원자, 보증인', phonetic: '', sentence: "The company agreed to sponsor the local soccer team.", translation: "그 회사는 지역 축구팀을 후원하기로 동의했다." },
       { en: 'grain', ko: 'n. 한 알, 낟알, 곡류 v. 낟알로 만들다', phonetic: '', sentence: "The farmer harvested a large amount of grain.", translation: "농부는 많은 양의 곡류를 수확했다." },
@@ -1103,7 +1103,7 @@ window.vocaData = [
       { en: 'landmark', ko: 'n. 주요 지형지물, 육상 지표, 획기적인 사건', phonetic: '', sentence: "The Eiffel Tower is a famous landmark in Paris.", translation: "에펠탑은 파리에서 유명한 주요 지형지물이다." },
       { en: 'tension', ko: 'n. 긴장, 팽팽함', phonetic: '', sentence: "There is growing political tension in the region.", translation: "그 지역에 정치적 긴장이 고조되고 있다." },
       { en: 'tale', ko: 'n. 이야기, 설화', phonetic: '', sentence: "He told us a fascinating tale about his adventures.", translation: "그는 우리에게 자신의 모험에 대한 흥미로운 이야기를 들려주었다." },
-      { en: 'term', ko: 'n. 용어, 기간 v. 부르다, 이름 짓다', phonetic: '', sentence: "The term 'globalization' is widely used today.", translation: "오늘날 '세계화'라는 용어가 널리 사용된다." },
+      { en: 'term', ko: 'n. 용어, 기간 v. 부르다, 이름 짓다', phonetic: '', sentence: "The term 'globalization' is widely used to"day".", translation: "오늘날 '세계화'라는 용어가 널리 사용된다." },
       { en: 'value', ko: 'n. 가치, 값 v. 평가하다, 가치를 매기다', phonetic: '', sentence: "I deeply value your friendship and support.", translation: "나는 당신의 우정과 지원을 깊이 가치 있게 평가한다." },
       { en: 'illusion', ko: 'n. 착각, 환영', phonetic: '', sentence: "The mirror in the room creates an illusion of space.", translation: "방 안의 거울은 공간에 대한 착각을 만들어낸다." },
       { en: 'outstanding', ko: 'a. 뛰어난, 중요한, 눈에 띄는', phonetic: '', sentence: "She has an outstanding academic record.", translation: "그녀는 뛰어난 학업 성적을 가지고 있다." },
@@ -1113,7 +1113,7 @@ window.vocaData = [
       { en: 'leash', ko: 'n. 목줄, 사슬 v. 속박하다', phonetic: '', sentence: "Please keep your dog on a leash in the park.", translation: "공원에서는 반려견에게 목줄을 채우세요." },
       { en: 'apron', ko: 'n. 앞치마 v. 앞치마를 두르다', phonetic: '', sentence: "The chef tied his apron before cooking.", translation: "요리사는 요리하기 전에 앞치마를 둘렀다." },
       { en: 'distortion', ko: 'n. 왜곡', phonetic: '', sentence: "The article was a complete distortion of the facts.", translation: "그 기사는 사실에 대한 완전한 왜곡이었다." },
-      { en: 'article', ko: 'n. 논문, 기사', phonetic: '', sentence: "I read an interesting article in today's newspaper.", translation: "나는 오늘 신문에서 흥미로운 기사를 읽었다." },
+      { en: 'article', ko: 'n. 논문, 기사', phonetic: '', sentence: "I read an interesting article in to"day"'s newspaper.", translation: "나는 오늘 신문에서 흥미로운 기사를 읽었다." },
       { en: 'nocturnal', ko: 'a. 야간의, 야행성의', phonetic: '', sentence: "Owls and bats are nocturnal animals.", translation: "올빼미와 박쥐는 야행성 동물이다." },
       { en: 'urge', ko: 'n. 충동 v. 촉구하다', phonetic: '', sentence: "I urge you to think carefully before deciding.", translation: "나는 당신이 결정하기 전에 신중하게 생각할 것을 촉구한다." },
       { en: 'infinite', ko: 'a. 무한한, 끝없는 n. 무한대, 무한한 공간', phonetic: '', sentence: "The universe seems to be infinite.", translation: "우주는 무한한 것 같다." },
@@ -1121,8 +1121,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 33,
-    words: [
+    "day": 33,
+    "words": [
       { en: 'opponent', ko: 'n. 상대방 a. 반대하는', phonetic: '', sentence: "He defeated his opponent in the final match.", translation: "그는 결승전에서 상대방을 물리쳤다." },
       { en: 'status', ko: 'n. 지위, 상태', phonetic: '', sentence: "Her status in the company has improved significantly.", translation: "회사에서 그녀의 지위가 크게 향상되었다." },
       { en: 'deduce', ko: 'v. 도출하다, 추론하다, 연역하다', phonetic: '', sentence: "We can deduce a lot from these statistics.", translation: "우리는 이 통계로부터 많은 것을 추론할 수 있다." },
@@ -1156,8 +1156,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 34,
-    words: [
+    "day": 34,
+    "words": [
       { en: 'minority', ko: 'n. 소수, 소수 집단, 미성년', phonetic: '', sentence: "A small minority of students opposed the idea.", translation: "소수의 학생들이 그 생각에 반대했다." },
       { en: 'eminent', ko: 'a. 저명한', phonetic: '', sentence: "She is an eminent scholar in the field of history.", translation: "그녀는 역사 분야에서 저명한 학자이다." },
       { en: 'gaze', ko: 'n. 시선, 눈길', phonetic: '', sentence: "He turned his gaze toward the window.", translation: "그는 시선을 창문 쪽으로 돌렸다." },
@@ -1191,8 +1191,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 35,
-    words: [
+    "day": 35,
+    "words": [
       { en: 'catalogue', ko: 'v. 목록화하다 n. 목록', phonetic: '', sentence: "The library's online catalogue is easy to use.", translation: "도서관의 온라인 목록은 사용하기 쉽다." },
       { en: 'scholarship', ko: 'n. 장학 기금, 장학금', phonetic: '', sentence: "She won a scholarship to study at Oxford.", translation: "그녀는 옥스퍼드에서 공부할 수 있는 장학금을 받았다." },
       { en: 'summarize', ko: 'v. 요약하다', phonetic: '', sentence: "Can you summarize the main points of the report?", translation: "보고서의 요점들을 요약해 줄 수 있나요?" },
@@ -1226,8 +1226,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 36,
-    words: [
+    "day": 36,
+    "words": [
       { en: 'assert', ko: 'v. 주장하다, 행사하다, 발휘하다', phonetic: '', sentence: "He confidently asserted his innocence.", translation: "그는 자신감 있게 자신의 무죄를 주장했다." },
       { en: 'potent', ko: 'a. 강력한', phonetic: '', sentence: "This medicine is highly potent.", translation: "이 약은 매우 강력하다." },
       { en: 'spoilage', ko: 'n. 부패', phonetic: '', sentence: "Refrigeration helps prevent food spoilage.", translation: "냉장 보관은 음식의 부패를 막는 데 도움이 된다." },
@@ -1244,7 +1244,7 @@ window.vocaData = [
       { en: 'contagious', ko: 'a. 전염성이 강한', phonetic: '', sentence: "Yawning is surprisingly contagious.", translation: "하품은 놀라울 정도로 전염성이 강하다." },
       { en: 'empirical', ko: 'a. 경험적인, 실증적인', phonetic: '', sentence: "We need empirical evidence to support this theory.", translation: "우리는 이 이론을 뒷받침할 경험적인(실증적인) 증거가 필요하다." },
       { en: 'argument', ko: 'n. 논증, 주장', phonetic: '', sentence: "They had a heated argument about politics.", translation: "그들은 정치에 대해 격렬한 논쟁을 벌였다." },
-      { en: 'thoughtful', ko: 'a. 사려 깊은, 친절한', phonetic: '', sentence: "It was very thoughtful of you to remember my birthday.", translation: "제 생일을 기억해 주시다니 참 사려 깊으시네요." },
+      { en: 'thoughtful', ko: 'a. 사려 깊은, 친절한', phonetic: '', sentence: "It was very thoughtful of you to remember my birth"day".", translation: "제 생일을 기억해 주시다니 참 사려 깊으시네요." },
       { en: 'tremendous', ko: 'a. 엄청난', phonetic: '', sentence: "He showed a tremendous amount of courage.", translation: "그는 엄청난 용기를 보여주었다." },
       { en: 'component', ko: 'n. 구성 요소', phonetic: '', sentence: "Trust is a vital component of any relationship.", translation: "신뢰는 모든 관계의 필수적인 구성 요소이다." },
       { en: 'perpetual', ko: 'a. 끊임없는', phonetic: '', sentence: "The peak of the mountain is covered in perpetual snow.", translation: "산 정상은 끊임없는(만년) 눈으로 덮여 있다." },
@@ -1261,8 +1261,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 37,
-    words: [
+    "day": 37,
+    "words": [
       { en: 'illiteracy', ko: 'n. 문맹', phonetic: '', sentence: "The government is trying to eradicate illiteracy.", translation: "정부는 문맹을 근절하기 위해 노력하고 있다." },
       { en: 'standardize', ko: 'v. 표준화하다', phonetic: '', sentence: "We need to standardize our testing procedures.", translation: "우리는 시험 절차를 표준화해야 한다." },
       { en: 'comply', ko: 'v. 순응하다, 따르다', phonetic: '', sentence: "All students must comply with the school rules.", translation: "모든 학생은 학교 규칙에 순응해야(따라야) 한다." },
@@ -1296,8 +1296,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 38,
-    words: [
+    "day": 38,
+    "words": [
       { en: 'entity', ko: 'n. 독립체', phonetic: '', sentence: "The two companies will operate as a single entity.", translation: "두 회사는 단일 독립체로 운영될 것이다." },
       { en: 'claim', ko: 'v. 주장하다 n. 주장', phonetic: '', sentence: "He claims to be an expert in the field.", translation: "그는 자신이 이 분야의 전문가라고 주장한다." },
       { en: 'stakeholder', ko: 'n. 이해 당사자, 주주', phonetic: '', sentence: "All stakeholders were invited to the meeting.", translation: "모든 이해 당사자들이 회의에 초대되었다." },
@@ -1331,8 +1331,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 39,
-    words: [
+    "day": 39,
+    "words": [
       { en: 'expectation', ko: 'n. 기대', phonetic: '', sentence: "The food exceeded my expectation.", translation: "그 음식은 내 기대를 뛰어넘었다." },
       { en: 'commitment', ko: 'n. 몰두, 전념, 헌신, 약속', phonetic: '', sentence: "Marriage requires a deep level of commitment.", translation: "결혼은 깊은 수준의 헌신을 요구한다." },
       { en: 'suffocating', ko: 'a. 숨 막히는, 질식할 것 같은', phonetic: '', sentence: "The heat in the crowded room was suffocating.", translation: "붐비는 방 안의 열기는 숨 막히는 듯했다." },
@@ -1366,8 +1366,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 40,
-    words: [
+    "day": 40,
+    "words": [
       { en: 'defense', ko: 'n. 방어 (태세), 방어(력)', phonetic: '', sentence: "The city walls were built for defense.", translation: "도시의 성벽들은 방어를 위해 지어졌다." },
       { en: 'stubborn', ko: 'a. 다루기 어려운, 완고한', phonetic: '', sentence: "He is too stubborn to admit he was wrong.", translation: "그는 너무 완고해서 자신이 틀렸음을 인정하지 않는다." },
       { en: 'discriminatory', ko: 'a. 차별적인', phonetic: '', sentence: "The company was sued for discriminatory practices.", translation: "그 회사는 차별적인 관행으로 고소를 당했다." },
@@ -1389,20 +1389,20 @@ window.vocaData = [
       { en: 'sympathetic', ko: 'a. 공감이 가는, 교감의, 호의적인', phonetic: '', sentence: "He was very sympathetic when I lost my dog.", translation: "내가 개를 잃어버렸을 때 그는 매우 공감해 주었다." },
       { en: 'tricky', ko: 'a. 까다로운, 어려운, 곤란한', phonetic: '', sentence: "Repairing the old engine was a tricky job.", translation: "낡은 엔진을 수리하는 것은 까다로운 일이었다." },
       { en: 'divorce', ko: 'n. 이혼, 분리 v. 이혼하다, 분리하다', phonetic: '', sentence: "The couple decided to get a divorce.", translation: "그 부부는 이혼하기로 결정했다." },
-      { en: 'provide', ko: 'v. 제공하다, 공급하다', phonetic: '', sentence: "The hotel will provide clean towels every day.", translation: "호텔은 매일 깨끗한 수건을 제공할 것이다." },
+      { en: 'provide', ko: 'v. 제공하다, 공급하다', phonetic: '', sentence: "The hotel will provide clean towels every "day".", translation: "호텔은 매일 깨끗한 수건을 제공할 것이다." },
       { en: 'ceremony', ko: 'n. 의식, 예식', phonetic: '', sentence: "The wedding ceremony was held in a beautiful church.", translation: "결혼식은 아름다운 교회에서 열렸다." },
       { en: 'mediator', ko: 'n. 매개자, 중재자', phonetic: '', sentence: "He acted as a mediator between the two parties.", translation: "그는 두 당사자 사이에서 중재자로 행동했다." },
       { en: 'fairy', ko: 'a. 상상의, 요정의 n. 동화, 요정', phonetic: '', sentence: "The children listened to a fairy tale before bed.", translation: "아이들은 잠들기 전에 동화(요정 이야기)를 들었다." },
       { en: 'pleasure', ko: 'n. 즐거움, 쾌락', phonetic: '', sentence: "It is a great pleasure to meet you.", translation: "당신을 만나게 되어 큰 즐거움입니다." },
-      { en: 'patron', ko: 'n. 후원자, (단골) 고객 v. 후원하다', phonetic: '', sentence: "The library is closed to patrons on Mondays.", translation: "도서관은 월요일에 고객들에게 문을 닫는다." },
+      { en: 'patron', ko: 'n. 후원자, (단골) 고객 v. 후원하다', phonetic: '', sentence: "The library is closed to patrons on Mon"day"s.", translation: "도서관은 월요일에 고객들에게 문을 닫는다." },
       { en: 'violate', ko: 'v. 위반하다, 침해하다', phonetic: '', sentence: "If you violate the rules, you will be punished.", translation: "규칙을 위반하면 처벌을 받을 것이다." },
       { en: 'regular', ko: 'a. 정기적인, 일반의', phonetic: '', sentence: "I am a regular customer at this coffee shop.", translation: "나는 이 커피숍의 정기적인 고객이다." },
       { en: 'inference', ko: 'n. 추론', phonetic: '', sentence: "What inference can you draw from this data?", translation: "이 데이터로부터 어떤 추론을 도출할 수 있나요?" }
     ],
   },
   {
-    day: 41,
-    words: [
+    "day": 41,
+    "words": [
       { en: 'atmosphere', ko: 'n. 분위기, 대기, 공기', phonetic: '', sentence: "The restaurant has a very romantic atmosphere.", translation: "그 식당은 매우 낭만적인 분위기를 가지고 있다." },
       { en: 'expertise', ko: 'n. 전문성, 전문 지식', phonetic: '', sentence: "We need someone with expertise in marketing.", translation: "우리는 마케팅에 전문 지식을 가진 사람이 필요하다." },
       { en: 'innovative', ko: 'a. 혁신적인', phonetic: '', sentence: "The company is known for its innovative products.", translation: "그 회사는 혁신적인 제품으로 유명하다." },
@@ -1436,8 +1436,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 42,
-    words: [
+    "day": 42,
+    "words": [
       { en: 'converge', ko: 'v. 수렴하다, 한 곳에 모이다', phonetic: '', sentence: "The two rivers converge at this point.", translation: "두 강이 이 지점에서 한 곳에 모인다." },
       { en: 'disconnect', ko: 'v. 단절되다, 끊다', phonetic: '', sentence: "Please disconnect the power before opening the case.", translation: "케이스를 열기 전에 전원을 끊어주세요." },
       { en: 'ape', ko: 'n. 유인원', phonetic: '', sentence: "Chimpanzees and gorillas are types of ape.", translation: "침팬지와 고릴라는 유인원의 종류이다." },
@@ -1452,7 +1452,7 @@ window.vocaData = [
       { en: 'standard', ko: 'a. 표준의, 일반의, 보통의 n. 표준, 기준, 규격', phonetic: '', sentence: "The company sets a high standard for customer service.", translation: "그 회사는 고객 서비스에 대해 높은 기준을 설정한다." },
       { en: 'outbreak', ko: 'n. 발생, 발발', phonetic: '', sentence: "The outbreak of war surprised everyone.", translation: "전쟁의 발발은 모두를 놀라게 했다." },
       { en: 'speculation', ko: 'n. 추측, 숙고, 사색', phonetic: '', sentence: "His resignation fueled speculation about his health.", translation: "그의 사임은 그의 건강에 대한 추측을 부추겼다." },
-      { en: 'task', ko: 'v. 과업을 맡기다 n. 업무, 과업', phonetic: '', sentence: "My first task of the day is to check emails.", translation: "나의 그날 첫 업무는 이메일을 확인하는 것이다." },
+      { en: 'task', ko: 'v. 과업을 맡기다 n. 업무, 과업', phonetic: '', sentence: "My first task of the "day" is to check emails.", translation: "나의 그날 첫 업무는 이메일을 확인하는 것이다." },
       { en: 'alienate', ko: 'v. 멀어지게 하다, 소외시키다', phonetic: '', sentence: "His arrogant behavior alienated his friends.", translation: "그의 오만한 행동은 친구들을 멀어지게 했다." },
       { en: 'shortage', ko: 'n. 부족, 결핍', phonetic: '', sentence: "The long drought caused a severe water shortage.", translation: "긴 가뭄이 심각한 물 부족을 초래했다." },
       { en: 'steer', ko: 'v. 이끌다, 조종하다', phonetic: '', sentence: "He used both hands to steer the boat.", translation: "그는 보트를 조종하기 위해 두 손을 사용했다." },
@@ -1465,14 +1465,14 @@ window.vocaData = [
       { en: 'heat', ko: 'v. 난방하다 n. 열', phonetic: '', sentence: "We use a gas heater to heat the room.", translation: "우리는 방을 난방하기 위해 가스 히터를 사용한다." },
       { en: 'eternal', ko: 'a. 영원한, 끊임없는', phonetic: '', sentence: "He swore his eternal love for her.", translation: "그는 그녀에 대한 영원한 사랑을 맹세했다." },
       { en: 'exclusion', ko: 'n. 배제, 제외', phonetic: '', sentence: "His deliberate exclusion from the meeting hurt his feelings.", translation: "회의에서 그를 의도적으로 배제한 것이 그의 기분을 상하게 했다." },
-      { en: 'lengthen', ko: 'v. 연장하다, 늘이다', phonetic: '', sentence: "The days begin to lengthen in spring.", translation: "봄이 되면 낮이 길어지기 시작한다." },
+      { en: 'lengthen', ko: 'v. 연장하다, 늘이다', phonetic: '', sentence: "The "day"s begin to lengthen in spring.", translation: "봄이 되면 낮이 길어지기 시작한다." },
       { en: 'count', ko: 'v. 여겨지다, 여기다, 유효하다, 세다 n. 계산, 총계', phonetic: '', sentence: "Every vote must count in an election.", translation: "선거에서는 모든 표가 유효해야 한다." },
       { en: 'misallocation', ko: 'n. 오배분, 부적당한 할당', phonetic: '', sentence: "The crisis was caused by a misallocation of resources.", translation: "위기는 자원의 오배분으로 인해 발생했다." }
     ],
   },
   {
-    day: 43,
-    words: [
+    "day": 43,
+    "words": [
       { en: 'suppression', ko: 'n. 억압, 억제', phonetic: '', sentence: "The brutal suppression of the protest sparked global outrage.", translation: "그 시위에 대한 잔혹한 억압은 전 세계의 분노를 촉발했다." },
       { en: 'belonging', ko: 'n. 소속, 속해 있는 것, (주로 복수로) 소지품', phonetic: '', sentence: "Having a sense of belonging is important for children.", translation: "소속감을 갖는 것은 아이들에게 중요하다." },
       { en: 'addiction', ko: 'n. 중독', phonetic: '', sentence: "He successfully overcame his gambling addiction.", translation: "그는 자신의 도박 중독을 성공적으로 극복했다." },
@@ -1506,8 +1506,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 44,
-    words: [
+    "day": 44,
+    "words": [
       { en: 'minimize', ko: 'v. 최소화하다', phonetic: '', sentence: "We must try to minimize the risk of infection.", translation: "우리는 감염의 위험을 최소화하려고 노력해야 한다." },
       { en: 'conclusion', ko: 'n. 결론', phonetic: '', sentence: "What conclusion did you draw from the evidence?", translation: "증거로부터 어떤 결론을 도출했나요?" },
       { en: 'genius', ko: 'n. 천재, 천재성', phonetic: '', sentence: "Einstein was a mathematical genius.", translation: "아인슈타인은 수학적 천재였다." },
@@ -1515,7 +1515,7 @@ window.vocaData = [
       { en: 'luxury', ko: 'n. 사치 a. 사치스러운', phonetic: '', sentence: "They live a life of luxury in a big mansion.", translation: "그들은 큰 저택에서 사치스러운 삶을 산다." },
       { en: 'clue', ko: 'n. 단서, 실마리', phonetic: '', sentence: "The police searched the room for a clue.", translation: "경찰은 단서를 찾기 위해 방을 수색했다." },
       { en: 'laboratory', ko: 'n. 실험실', phonetic: '', sentence: "The scientist spent all night in the laboratory.", translation: "그 과학자는 실험실에서 밤을 새웠다." },
-      { en: 'client', ko: 'n. 고객, 이용자', phonetic: '', sentence: "The lawyer is meeting a new client today.", translation: "변호사는 오늘 새로운 고객을 만날 것이다." },
+      { en: 'client', ko: 'n. 고객, 이용자', phonetic: '', sentence: "The lawyer is meeting a new client to"day".", translation: "변호사는 오늘 새로운 고객을 만날 것이다." },
       { en: 'devastate', ko: 'v. 망연자실하게 하다, 파괴하다, 곤혹스럽게 하다', phonetic: '', sentence: "A massive earthquake will devastate the city.", translation: "거대한 지진이 그 도시를 파괴할 것이다." },
       { en: 'procedure', ko: 'n. (의학적) 처치, 수술, 절차', phonetic: '', sentence: "Follow the correct safety procedure at all times.", translation: "항상 올바른 안전 절차를 따르십시오." },
       { en: 'scientific', ko: 'a. 과학적인, 과학의', phonetic: '', sentence: "The theory is not supported by scientific evidence.", translation: "그 이론은 과학적 증거에 의해 뒷받침되지 않는다." },
@@ -1541,8 +1541,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 45,
-    words: [
+    "day": 45,
+    "words": [
       { en: 'tackle', ko: 'v. 다루다, 해결하다, 처리하다', phonetic: '', sentence: "The government must tackle the issue of youth unemployment.", translation: "정부는 청년 실업 문제를 다루어야 한다." },
       { en: 'ceiling', ko: 'n. 한도, 천장', phonetic: '', sentence: "The room has a very high ceiling.", translation: "그 방은 매우 높은 천장을 가지고 있다." },
       { en: 'encode', ko: 'v. 표현하다, 암호화하다, 부호화하다', phonetic: '', sentence: "The software will encode the data for security.", translation: "소프트웨어가 보안을 위해 데이터를 암호화할 것이다." },
@@ -1558,7 +1558,7 @@ window.vocaData = [
       { en: 'prospective', ko: 'a. 예상되는, 장래의', phonetic: '', sentence: "We are interviewing prospective candidates for the job.", translation: "우리는 그 직무에 대한 예상(장래) 후보자들을 면접하고 있다." },
       { en: 'assertion', ko: 'n. 주장', phonetic: '', sentence: "I completely disagree with his assertion.", translation: "나는 그의 주장에 완전히 동의하지 않는다." },
       { en: 'concrete', ko: 'a. 구체적인', phonetic: '', sentence: "We need concrete evidence to prove his guilt.", translation: "우리는 그의 유죄를 입증할 구체적인 증거가 필요하다." },
-      { en: 'sore', ko: 'a. 쑤시는, 아픈', phonetic: '', sentence: "My legs are sore from running yesterday.", translation: "어제 달리기 때문에 다리가 아프다." },
+      { en: 'sore', ko: 'a. 쑤시는, 아픈', phonetic: '', sentence: "My legs are sore from running yester"day".", translation: "어제 달리기 때문에 다리가 아프다." },
       { en: 'hypothesis', ko: 'n. 가설 ( pl. hypotheses )', phonetic: '', sentence: "Scientists will test the hypothesis with a new experiment.", translation: "과학자들은 새로운 실험으로 그 가설을 검증할 것이다." },
       { en: 'deterministic', ko: 'a. 결정론적인', phonetic: '', sentence: "Classical physics often takes a deterministic view of the universe.", translation: "고전 물리학은 종종 우주에 대해 결정론적인 관점을 취한다." },
       { en: 'drive', ko: 'n. 욕구, 충동, (조직적인) 행사, 운동 v. 몰아가다', phonetic: '', sentence: "Hunger was the main drive behind his actions.", translation: "배고픔이 그의 행동 이면의 주된 충동이었다." },
@@ -1576,8 +1576,8 @@ window.vocaData = [
     ],
   }
   {
-    day: 46,
-    words: [
+    "day": 46,
+    "words": [
       { en: 'toxic', ko: 'a. 유해한, 유독성의', phonetic: '', sentence: "These chemicals are highly toxic to fish.", translation: "이 화학 물질들은 물고기에게 매우 유독하다." },
       { en: 'certify', ko: 'v. 증명하다, 인증하다', phonetic: '', sentence: "The document is certified by the government.", translation: "그 문서는 정부에 의해 인증되었다." },
       { en: 'disaster', ko: 'n. 큰 실패, 재해, 재난', phonetic: '', sentence: "The earthquake was a terrible natural disaster.", translation: "그 지진은 끔찍한 자연 재난이었다." },
@@ -1594,7 +1594,7 @@ window.vocaData = [
       { en: 'identical', ko: 'a. 동일한', phonetic: '', sentence: "The two pictures are almost identical.", translation: "그 두 사진은 거의 동일하다." },
       { en: 'squeeze', ko: 'v. 꽉 쥐다, 짜내다', phonetic: '', sentence: "He squeezed the lemon to get the juice out.", translation: "그는 즙을 짜내기 위해 레몬을 꽉 쥐었다." },
       { en: 'heir', ko: 'n. 후계자, 계승자, 상속인', phonetic: '', sentence: "The prince is the heir to the throne.", translation: "그 왕자는 왕위 계승자이다." },
-      { en: 'gathering', ko: 'n. 모임, 채집, 수집', phonetic: '', sentence: "We had a small family gathering for his birthday.", translation: "우리는 그의 생일을 맞아 작은 가족 모임을 가졌다." },
+      { en: 'gathering', ko: 'n. 모임, 채집, 수집', phonetic: '', sentence: "We had a small family gathering for his birth"day".", translation: "우리는 그의 생일을 맞아 작은 가족 모임을 가졌다." },
       { en: 'revise', ko: 'v. 조정하다, 개정하다, 수정하다', phonetic: '', sentence: "I need to revise my essay before submitting it.", translation: "나는 제출하기 전에 에세이를 수정해야 한다." },
       { en: 'transmission', ko: 'n. 전승, 전달, 전송', phonetic: '', sentence: "The transmission of data took only a few seconds.", translation: "데이터 전송은 단 몇 초밖에 걸리지 않았다." },
       { en: 'framework', ko: 'n. 체계, 체제', phonetic: '', sentence: "This document provides a framework for future research.", translation: "이 문서는 미래 연구를 위한 체계를 제공한다." },
@@ -1611,8 +1611,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 47,
-    words: [
+    "day": 47,
+    "words": [
       { en: 'sustain', ko: 'v. (피해 등을) 겪다, 지속하다, 유지하다', phonetic: '', sentence: "The building could not sustain the force of the wind.", translation: "그 건물은 바람의 힘을 견디지(유지하지) 못했다." },
       { en: 'classify', ko: 'v. 분류하다', phonetic: '', sentence: "Biologists classify animals into different groups.", translation: "생물학자들은 동물을 다양한 그룹으로 분류한다." },
       { en: 'compass', ko: 'n. 나침반', phonetic: '', sentence: "A compass always points to the north.", translation: "나침반은 항상 북쪽을 가리킨다." },
@@ -1646,9 +1646,9 @@ window.vocaData = [
     ],
   },
   {
-    day: 48,
-    words: [
-      { en: 'medicine', ko: 'n. 약, 의학', phonetic: '', sentence: "Take this medicine three times a day.", translation: "이 약을 하루에 세 번 복용하세요." },
+    "day": 48,
+    "words": [
+      { en: 'medicine', ko: 'n. 약, 의학', phonetic: '', sentence: "Take this medicine three times a "day".", translation: "이 약을 하루에 세 번 복용하세요." },
       { en: 'digestible', ko: 'a. 소화하기 쉬운, 이해하기 쉬운', phonetic: '', sentence: "Soup is an easily digestible meal.", translation: "수프는 소화하기 쉬운 식사이다." },
       { en: 'preservative', ko: 'n. 방부제 a. 방부의', phonetic: '', sentence: "This bread contains no artificial preservatives.", translation: "이 빵에는 인공 방부제가 들어 있지 않다." },
       { en: 'marvel', ko: 'v. 경탄하다, 감탄하다', phonetic: '', sentence: "We could only marvel at the beauty of the landscape.", translation: "우리는 그 풍경의 아름다움에 감탄할 수밖에 없었다." },
@@ -1677,18 +1677,18 @@ window.vocaData = [
       { en: 'comparable', ko: 'a. 비교할 수 있는, 비슷한', phonetic: '', sentence: "The two products are comparable in quality.", translation: "그 두 제품은 품질 면에서 비슷하다." },
       { en: 'tentative', ko: 'a. 잠정적인', phonetic: '', sentence: "We made a tentative plan for the weekend.", translation: "우리는 주말을 위한 잠정적인 계획을 세웠다." },
       { en: 'stimulus', ko: 'n. 자극 ( pl. stimuli)', phonetic: '', sentence: "Light is a stimulus to which our eyes respond.", translation: "빛은 우리의 눈이 반응하는 자극이다." },
-      { en: 'mutter', ko: 'v. 중얼거리다', phonetic: '', sentence: "She began to mutter words of complaint.", translation: "그녀는 불평의 말을 중얼거리기 시작했다." }
+      { en: 'mutter', ko: 'v. 중얼거리다', phonetic: '', sentence: "She began to mutter "words" of complaint.", translation: "그녀는 불평의 말을 중얼거리기 시작했다." }
     ],
   },
   {
-    day: 49,
-    words: [
+    "day": 49,
+    "words": [
       { en: 'expose', ko: 'v. 접하게 하다, 노출시키다', phonetic: '', sentence: "It's not good to expose children to too much violence.", translation: "아이들을 너무 많은 폭력에 노출시키는 것은 좋지 않다." },
       { en: 'recurring', ko: 'a. 반복적인, 순환하는', phonetic: '', sentence: "He suffered from a recurring nightmare.", translation: "그는 반복되는 악몽에 시달렸다." },
       { en: 'tough', ko: 'a. 아주 힘이 센, 어려운, 힘든', phonetic: '', sentence: "It was a tough decision to make.", translation: "그것은 내리기 힘든 결정이었다." },
       { en: 'underpin', ko: 'v. 뒷받침하다, 지지하다', phonetic: '', sentence: "These facts underpin my argument.", translation: "이 사실들이 나의 주장을 뒷받침한다." },
       { en: 'multitude', ko: 'n. 많음, 다수', phonetic: '', sentence: "A multitude of birds gathered in the sky.", translation: "다수의 새들이 하늘에 모였다." },
-      { en: 'contradiction', ko: 'n. 모순, 부인, 반박', phonetic: '', sentence: "There is a direct contradiction between his words and actions.", translation: "그의 말과 행동 사이에는 직접적인 모순이 있다." },
+      { en: 'contradiction', ko: 'n. 모순, 부인, 반박', phonetic: '', sentence: "There is a direct contradiction between his "words" and actions.", translation: "그의 말과 행동 사이에는 직접적인 모순이 있다." },
       { en: 'nuance', ko: 'n. 미묘한 차이, 뉘앙스 v. 미세하게 조정하다', phonetic: '', sentence: "He caught every subtle nuance of her speech.", translation: "그는 그녀 연설의 모든 미묘한 차이(뉘앙스)를 포착했다." },
       { en: 'aspire', ko: 'v. 포부를 가지다, 큰 뜻을 품다', phonetic: '', sentence: "Many young players aspire to be professional athletes.", translation: "많은 젊은 선수들이 프로 운동선수가 되려는 포부를 가진다." },
       { en: 'thesis', ko: 'n. 논문, 명제, 주제', phonetic: '', sentence: "She is writing her master's thesis on modern poetry.", translation: "그녀는 현대 시에 대한 석사 논문을 쓰고 있다." },
@@ -1709,15 +1709,15 @@ window.vocaData = [
       { en: 'via', ko: 'prep. ~으로, ~을 통해, ~을 경유하여', phonetic: '', sentence: "We flew to London via Dubai.", translation: "우리는 두바이를 경유하여 런던으로 날아갔다." },
       { en: 'cite', ko: 'v. 인용하다, 언급하다', phonetic: '', sentence: "The author cited several experts in his book.", translation: "저자는 책에서 여러 전문가들을 인용했다." },
       { en: 'convenient', ko: 'a. 편리한, 사용하기 좋은', phonetic: '', sentence: "This location is very convenient for commuters.", translation: "이 위치는 통근자들에게 매우 편리하다." },
-      { en: 'mood', ko: 'n. 기분, 분위기, 풍조', phonetic: '', sentence: "I'm not in the mood for jokes today.", translation: "나는 오늘 농담할 기분이 아니다." },
+      { en: 'mood', ko: 'n. 기분, 분위기, 풍조', phonetic: '', sentence: "I'm not in the mood for jokes to"day".", translation: "나는 오늘 농담할 기분이 아니다." },
       { en: 'correspondent', ko: 'n. 특파원, 통신원 a. 일치하는', phonetic: '', sentence: "He is a foreign correspondent for a news channel.", translation: "그는 뉴스 채널의 해외 특파원이다." },
       { en: 'solid', ko: 'n. 고체, 고형 a. 탄탄한, 고체의', phonetic: '', sentence: "Water turns into a solid when it freezes.", translation: "물은 얼면 고체가 된다." },
       { en: 'pile', ko: 'v. 쌓다 n. 더미, 무더기', phonetic: '', sentence: "There was a pile of dirty laundry on the floor.", translation: "바닥에는 더러운 빨래 더미가 있었다." }
     ],
   },
   {
-    day: 50,
-    words: [
+    "day": 50,
+    "words": [
       { en: 'graffiti', ko: 'n. (공공장소에 하는) 낙서, 그라피티', phonetic: '', sentence: "The wall was covered in colorful graffiti.", translation: "그 벽은 다채로운 낙서로 덮여 있었다." },
       { en: 'subscription', ko: 'n. 구독, 구독권', phonetic: '', sentence: "I renewed my magazine subscription for another year.", translation: "나는 잡지 구독을 1년 더 갱신했다." },
       { en: 'weed', ko: 'v. 잡초를 뽑다 n. 잡초', phonetic: '', sentence: "We spent the afternoon weeding the garden.", translation: "우리는 정원의 잡초를 뽑으며 오후를 보냈다." },
@@ -1751,8 +1751,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 51,
-    words: [
+    "day": 51,
+    "words": [
       { en: 'pseudoscientific', ko: 'a. 유사 과학의', phonetic: '', sentence: "Many diet pills rely on pseudoscientific claims.", translation: "많은 다이어트 약들이 유사 과학의 주장에 의존한다." },
       { en: 'assure', ko: 'v. 장담하다, 안심시키다', phonetic: '', sentence: "I assure you that the problem will be fixed.", translation: "문제가 해결될 것이라고 장담합니다(안심시킵니다)." },
       { en: 'input', ko: 'n. 투입, 의견 v. 입력하다', phonetic: '', sentence: "We need your input to make this project succeed.", translation: "우리는 이 프로젝트를 성공시키기 위해 여러분의 의견이 필요합니다." },
@@ -1786,8 +1786,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 52,
-    words: [
+    "day": 52,
+    "words": [
       { en: 'relocate', ko: 'v. 이전하다', phonetic: '', sentence: "The company decided to relocate its headquarters to Seoul.", translation: "회사는 본사를 서울로 이전하기로 결정했다." },
       { en: 'scar', ko: 'n. 흉터', phonetic: '', sentence: "The burn left a small scar on his arm.", translation: "화상은 그의 팔에 작은 흉터를 남겼다." },
       { en: 'dissolve', ko: 'v. 사라지다, 녹이다', phonetic: '', sentence: "Stir the tea until the sugar dissolves.", translation: "설탕이 녹을 때까지 차를 저으세요." },
@@ -1820,8 +1820,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 53,
-    words: [
+    "day": 53,
+    "words": [
       { en: 'surrounding', ko: 'n. 주변 (환경)', phonetic: '', sentence: "The animals blended perfectly into their natural surrounding.", translation: "동물들은 그들의 자연 주변 환경에 완벽하게 섞였다." },
       { en: 'heel', ko: 'n. 뒷굽, 발뒤꿈치', phonetic: '', sentence: "She rubbed a sore spot on her heel.", translation: "그녀는 발뒤꿈치의 아픈 곳을 문질렀다." },
       { en: 'burst', ko: 'v. 붕괴하다, 터지다', phonetic: '', sentence: "The balloon burst with a loud pop.", translation: "풍선이 큰 소리를 내며 터졌다." },
@@ -1855,8 +1855,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 54,
-    words: [
+    "day": 54,
+    "words": [
       { en: 'dilation', ko: 'n. 지연, 확장', phonetic: '', sentence: "The eye drops cause pupil dilation.", translation: "그 안약은 동공 확장을 유발한다." },
       { en: 'codify', ko: 'v. (법률 등을) 성문화하다, 체계화하다', phonetic: '', sentence: "The new law aims to codify workers' rights.", translation: "새로운 법은 노동자들의 권리를 성문화하는 것을 목표로 한다." },
       { en: 'sedentary', ko: 'a. 앉은 채 지내는, 몸을 많이 움직이지 않는', phonetic: '', sentence: "A sedentary lifestyle can lead to health problems.", translation: "몸을 많이 움직이지 않는 생활방식은 건강 문제를 일으킬 수 있다." },
@@ -1890,8 +1890,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 55,
-    words: [
+    "day": 55,
+    "words": [
       { en: 'fuss', ko: 'n. 번거로움, 소란', phonetic: '', sentence: "I don't understand what all the fuss is about.", translation: "나는 무엇 때문에 그렇게 소란을 피우는지 모르겠다." },
       { en: 'supply', ko: 'n. 용품, 공급 v. 공급하다', phonetic: '', sentence: "The school will supply all the necessary books.", translation: "학교가 필요한 모든 책을 공급할 것이다." },
       { en: 'assignment', ko: 'n. 과제, 임무, 배정, 배치', phonetic: '', sentence: "The teacher gave us a difficult math assignment.", translation: "선생님은 우리에게 어려운 수학 과제를 주셨다." },
@@ -1920,16 +1920,16 @@ window.vocaData = [
       { en: 'address', ko: 'v. (어려운 문제 등을) 다루다, 처리하다 n. 주소', phonetic: '', sentence: "We must immediately address the safety issue.", translation: "우리는 그 안전 문제를 즉각 다루어야 한다." },
       { en: 'landscape', ko: 'n. 풍경, 경관, 지형', phonetic: '', sentence: "The artist paints beautiful mountain landscapes.", translation: "그 예술가는 아름다운 산 풍경을 그린다." },
       { en: 'arch', ko: 'n. 아치 v. 아치형으로 구부리다[휘다]', phonetic: '', sentence: "The cat arched its back and hissed.", translation: "고양이가 등을 아치형으로 구부리며 하악질을 했다." },
-      { en: 'inviting', ko: 'a. 매력적인', phonetic: '', sentence: "The warm fire looked very inviting on a cold day.", translation: "추운 날 따뜻한 불이 매우 매력적으로 보였다." },
+      { en: 'inviting', ko: 'a. 매력적인', phonetic: '', sentence: "The warm fire looked very inviting on a cold "day".", translation: "추운 날 따뜻한 불이 매우 매력적으로 보였다." },
       { en: 'ingredient', ko: 'n. 성분, 요인, 구성 요소', phonetic: '', sentence: "Fresh basil is a key ingredient in pesto sauce.", translation: "신선한 바질은 페스토 소스의 핵심 성분이다." }
     ],
   },
   {
-    day: 56,
-    words: [
+    "day": 56,
+    "words": [
       { en: 'vendor', ko: 'n. 판매자, 노점상', phonetic: '', sentence: "I bought a hot dog from a street vendor.", translation: "나는 길거리 노점상에게서 핫도그를 샀다." },
       { en: 'spot', ko: 'v. 찾다, 알아채다 n. 지대, 곳', phonetic: '', sentence: "I managed to spot him in the crowded room.", translation: "나는 붐비는 방 안에서 그를 간신히 찾아냈다." },
-      { en: 'payment', ko: 'n. 결제, 지불(금), 납입(금)', phonetic: '', sentence: "I must make the final payment by Friday.", translation: "나는 금요일까지 최종 결제를 해야 한다." },
+      { en: 'payment', ko: 'n. 결제, 지불(금), 납입(금)', phonetic: '', sentence: "I must make the final payment by Fri"day".", translation: "나는 금요일까지 최종 결제를 해야 한다." },
       { en: 'replacement', ko: 'n. 재발급, 교체, 대체', phonetic: '', sentence: "The broken window needs immediate replacement.", translation: "깨진 창문은 즉각적인 교체가 필요하다." },
       { en: 'compartment', ko: 'n. 칸, 구역, 객실', phonetic: '', sentence: "Put your luggage in the overhead compartment.", translation: "수하물을 머리 위쪽 칸에 넣으세요." },
       { en: 'overdue', ko: 'a. 연체된', phonetic: '', sentence: "This library book is two weeks overdue.", translation: "이 도서관 책은 2주 연체되었다." },
@@ -1944,7 +1944,7 @@ window.vocaData = [
       { en: 'autonomous', ko: 'a. 자율적인, 독립적인', phonetic: '', sentence: "The company is testing an autonomous driving vehicle.", translation: "회사는 자율 주행 차량을 테스트하고 있다." },
       { en: 'accommodation', ko: 'n. (주로 복수로) 숙박 시설, 숙소', phonetic: '', sentence: "The price includes flights and hotel accommodation.", translation: "그 가격에는 비행기와 호텔 숙소가 포함되어 있다." },
       { en: 'texture', ko: 'n. 질감, 식감', phonetic: '', sentence: "The artist painted the wall to give it a rough texture.", translation: "예술가는 벽에 거친 질감을 주기 위해 색칠했다." },
-      { en: 'voucher', ko: 'n. (현금 대용의) 교환권, 상품권', phonetic: '', sentence: "I received a $50 gift voucher for my birthday.", translation: "나는 생일 선물로 50달러 상품권을 받았다." },
+      { en: 'voucher', ko: 'n. (현금 대용의) 교환권, 상품권', phonetic: '', sentence: "I received a $50 gift voucher for my birth"day".", translation: "나는 생일 선물로 50달러 상품권을 받았다." },
       { en: 'secure', ko: 'v. 확보하다, 획득하다 a. 안전한, 안심하는', phonetic: '', sentence: "He managed to secure a loan from the bank.", translation: "그는 간신히 은행으로부터 대출을 확보했다." },
       { en: 'profit', ko: 'n. 수익, 이윤', phonetic: '', sentence: "The business made a huge profit this year.", translation: "그 사업은 올해 막대한 이윤을 냈다." },
       { en: 'migrant', ko: 'n. 이주민, 철새 a. 이주성의', phonetic: '', sentence: "Many migrant workers come to the city to find jobs.", translation: "많은 이주 노동자들이 일자리를 찾기 위해 도시로 온다." },
@@ -1960,12 +1960,12 @@ window.vocaData = [
     ],
   },
   {
-    day: 57,
-    words: [
+    "day": 57,
+    "words": [
       { en: 'crane', ko: 'n. 기중기', phonetic: '', sentence: "A massive crane lifted the steel beams onto the roof.", translation: "거대한 기중기가 철제 빔을 지붕 위로 들어 올렸다." },
       { en: 'viewpoint', ko: 'n. 관점, 방향', phonetic: '', sentence: "From a financial viewpoint, the deal makes sense.", translation: "재정적 관점에서 볼 때 그 거래는 타당하다." },
       { en: 'numerous', ko: 'a. 수많은', phonetic: '', sentence: "She has won numerous awards for her acting.", translation: "그녀는 연기로 수많은 상을 받았다." },
-      { en: 'convey', ko: 'v. 전달하다', phonetic: '', sentence: "Words cannot convey how much I appreciate your help.", translation: "제가 당신의 도움에 얼마나 감사하는지 말로는 전달할 수 없습니다." },
+      { en: 'convey', ko: 'v. 전달하다', phonetic: '', sentence: ""words" cannot convey how much I appreciate your help.", translation: "제가 당신의 도움에 얼마나 감사하는지 말로는 전달할 수 없습니다." },
       { en: 'pharmacy', ko: 'n. 약국, 약학', phonetic: '', sentence: "I need to pick up my medicine from the pharmacy.", translation: "나는 약국에서 약을 찾아와야 한다." },
       { en: 'notice', ko: 'n. 공지, 공고 v. 알아차리다', phonetic: '', sentence: "Did you notice any change in his behavior?", translation: "그의 행동에서 어떤 변화를 알아차렸나요?" },
       { en: 'mandatory', ko: 'a. 필수적인', phonetic: '', sentence: "Wearing a helmet is mandatory when riding a motorcycle.", translation: "오토바이를 탈 때 헬멧 착용은 필수적이다." },
@@ -1995,8 +1995,8 @@ window.vocaData = [
     ],
   },
   {
-    day: 58,
-    words: [
+    "day": 58,
+    "words": [
       { en: 'vague', ko: 'a. 모호한, 애매한', phonetic: '', sentence: "He gave only a vague answer to my question.", translation: "그는 내 질문에 그저 모호한 대답만 했다." },
       { en: 'vent', ko: 'n. (공기 등의) 출구, 배출구, 통풍구', phonetic: '', sentence: "Smoke poured out of the air vent.", translation: "연기가 환기구(통풍구)에서 뿜어져 나왔다." },
       { en: 'feed', ko: 'v. 먹이를 주다 n. 피드(제공되는 정보)', phonetic: '', sentence: "Please do not feed the animals in the zoo.", translation: "동물원 안에서 동물들에게 먹이를 주지 마세요." },
@@ -2030,11 +2030,11 @@ window.vocaData = [
     ],
   },
   {
-    day: 59,
-    words: [
+    "day": 59,
+    "words": [
       { en: 'broadcasting', ko: 'n. 방송(업)', phonetic: '', sentence: "The company has a long history in television broadcasting.", translation: "그 회사는 텔레비전 방송 분야에서 오랜 역사를 가지고 있다." },
       { en: 'absence', ko: 'n. 결석, 부재', phonetic: '', sentence: "In her absence, I will manage the team.", translation: "그녀의 부재 동안에는 내가 팀을 관리할 것이다." },
-      { en: 'appealing', ko: 'a. 매력적인, 마음이 끌리는', phonetic: '', sentence: "The idea of a long holiday is very appealing.", translation: "긴 휴가라는 생각은 매우 매력적이다." },
+      { en: 'appealing', ko: 'a. 매력적인, 마음이 끌리는', phonetic: '', sentence: "The idea of a long holi"day" is very appealing.", translation: "긴 휴가라는 생각은 매우 매력적이다." },
       { en: 'permission', ko: 'n. 허가', phonetic: '', sentence: "You need permission to enter this restricted area.", translation: "이 제한 구역에 들어가려면 허가가 필요합니다." },
       { en: 'heritage', ko: 'n. 유산, 유적', phonetic: '', sentence: "We must preserve our cultural heritage for future generations.", translation: "우리는 미래 세대를 위해 우리의 문화유산을 보존해야 한다." },
       { en: 'aspect', ko: 'n. 요소, 측면', phonetic: '', sentence: "They considered every aspect of the problem.", translation: "그들은 그 문제의 모든 측면을 고려했다." },
@@ -2056,8 +2056,8 @@ window.vocaData = [
       { en: 'eligible', ko: 'a. 자격이 있는, 적합한', phonetic: '', sentence: "Only members are eligible for the discount.", translation: "오직 회원만이 할인을 받을 자격이 있습니다." },
       { en: 'deposit', ko: 'v. 입금하다, 예금하다 n. 보증금, 착수금', phonetic: '', sentence: "I need to deposit this money into my bank account.", translation: "나는 내 은행 계좌에 이 돈을 입금해야 한다." },
       { en: 'spiral', ko: 'a. 나선형의 n. 소용돌이', phonetic: '', sentence: "The smoke rose in a spiral column.", translation: "연기가 나선형 기둥 모양으로 피어올랐다." },
-      { en: 'run', ko: 'v. 운영되다, 진행되다, 운영하다, 달리다', phonetic: '', sentence: "She wants to run her own business one day.", translation: "그녀는 언젠가 자신의 사업을 운영하기를 원한다." },
-      { en: 'deadline', ko: 'n. 마감일, 기한', phonetic: '', sentence: "The deadline to submit the application is Friday.", translation: "지원서 제출 마감일은 금요일이다." },
+      { en: 'run', ko: 'v. 운영되다, 진행되다, 운영하다, 달리다', phonetic: '', sentence: "She wants to run her own business one "day".", translation: "그녀는 언젠가 자신의 사업을 운영하기를 원한다." },
+      { en: 'deadline', ko: 'n. 마감일, 기한', phonetic: '', sentence: "The deadline to submit the application is Fri"day".", translation: "지원서 제출 마감일은 금요일이다." },
       { en: 'spill', ko: 'n. 유출 v. 쏟다, 흐르다', phonetic: '', sentence: "Be careful not to spill the hot coffee.", translation: "뜨거운 커피를 쏟지 않도록 조심하세요." },
       { en: 'grocery', ko: 'n. 식료품', phonetic: '', sentence: "I need to go to the store to buy some groceries.", translation: "나는 식료품을 좀 사러 가게에 가야 한다." },
       { en: 'previous', ko: 'a. 전의, 이전의', phonetic: '', sentence: "Do you have any previous experience in this field?", translation: "이 분야에 이전 경험이 있습니까?" },
@@ -2065,14 +2065,14 @@ window.vocaData = [
     ],
   },
   {
-    day: 60,
-    words: [
+    "day": 60,
+    "words": [
       { en: 'peel', ko: 'v. (껍질을) 벗기다 n. 껍질', phonetic: '', sentence: "You need to peel the potatoes before boiling them.", translation: "감자를 삶기 전에 껍질을 벗겨야 한다." },
       { en: 'bare', ko: 'v. 드러내다 a. 벌거벗은', phonetic: '', sentence: "The dog bared its teeth and growled.", translation: "그 개는 이빨을 드러내고 으르렁거렸다." },
       { en: 'thread', ko: 'n. 실, 실타래', phonetic: '', sentence: "I need a needle and some black thread to fix this shirt.", translation: "이 셔츠를 고치려면 바늘과 검은 실이 좀 필요해." },
       { en: 'signature', ko: 'a. 대표의 n. 표시, 서명', phonetic: '', sentence: "The chef prepared his signature dish for us.", translation: "요리사는 우리를 위해 그의 대표 요리를 준비했다." },
       { en: 'inspection', ko: 'n. 점검, 검사, 살펴봄', phonetic: '', sentence: "The car must pass a safety inspection every year.", translation: "그 차는 매년 안전 점검을 통과해야 한다." },
-      { en: 'refreshing', ko: 'a. 원기를 북돋우는, 상쾌하게 하는, 신선한', phonetic: '', sentence: "A cool glass of water is very refreshing on a hot day.", translation: "더운 날 시원한 물 한 잔은 매우 상쾌하다." },
+      { en: 'refreshing', ko: 'a. 원기를 북돋우는, 상쾌하게 하는, 신선한', phonetic: '', sentence: "A cool glass of water is very refreshing on a hot "day".", translation: "더운 날 시원한 물 한 잔은 매우 상쾌하다." },
       { en: 'storage', ko: 'n. 저장 공간, 저장 시설, 저장', phonetic: '', sentence: "My phone is running out of storage space.", translation: "내 휴대폰에 저장 공간이 부족해지고 있다." },
       { en: 'expire', ko: 'v. (유통 기간이) 끝나다, 만료되다', phonetic: '', sentence: "My passport will expire in two months.", translation: "내 여권은 두 달 후에 만료될 것이다." },
       { en: 'disguise', ko: 'v. 위장하다, 변장하다 n. 변장, 위장', phonetic: '', sentence: "The thief tried to disguise himself as a security guard.", translation: "도둑은 경비원으로 위장하려고 시도했다." },
@@ -2098,5 +2098,5 @@ window.vocaData = [
       { en: 'mural', ko: 'n. 벽화', phonetic: '', sentence: "A beautiful mural was painted on the side of the building.", translation: "건물 측면에 아름다운 벽화가 그려졌다." },
       { en: 'illustration', ko: 'n. 삽화, 예시', phonetic: '', sentence: "The book contains many colorful illustrations.", translation: "그 책은 많은 다채로운 삽화들을 포함하고 있다." }
     ],
-  }
+  },
 ];
