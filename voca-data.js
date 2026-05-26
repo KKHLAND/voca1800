@@ -2098,5 +2098,5 @@ window.vocaData = [
       { en: 'mural', ko: 'n. 벽화', phonetic: '', sentence: "A beautiful mural was painted on the side of the building.", translation: "건물 측면에 아름다운 벽화가 그려졌다." },
       { en: 'illustration', ko: 'n. 삽화, 예시', phonetic: '', sentence: "The book contains many colorful illustrations.", translation: "그 책은 많은 다채로운 삽화들을 포함하고 있다." }
     ],
-  },
+},
 ];
