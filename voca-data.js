@@ -1348,7 +1348,7 @@ window.vocaData = [
       { en: 'fundamental', ko: 'a. 근본적인, 기본적인', phonetic: '', sentence: "Freedom of speech is a fundamental human right.", translation: "언론의 자유는 근본적인 인권이다." },
       { en: 'synchronous', ko: 'a. 동시적인, 동시에 발생하는', phonetic: '', sentence: "The dancers moved in perfect synchronous steps.", translation: "무용수들은 완벽히 동시적인 스텝으로 움직였다." },
       { en: 'preceding', ko: 'a. 선행하는, 이전의, 앞선', phonetic: '', sentence: "Read the preceding chapter before taking the test.", translation: "시험을 보기 전에 앞선 장을 읽으세요." },
-      { en: 'simultaneous', ko: 'n. 점유율, 몫 v. 공유하다, 나누다', phonetic: '', sentence: "The two events were simultaneous.", translation: "그 두 사건은 동시에 일어났다." },
+      { en: 'simultaneous', ko: 'a. 동시적인', phonetic: '', sentence: "The patient experienced a simultaneous drop in blood pressure and heart rate.", translation: "환자는 혈압과 심박수의 동시 저하를 겪었다." },
       { en: 'notification', ko: 'n. 알림', phonetic: '', sentence: "Did you receive the email notification?", translation: "이메일 알림을 받았나요?" },
       { en: 'trait', ko: 'n. 특성', phonetic: '', sentence: "Honesty is her best personality trait.", translation: "정직은 그녀의 가장 좋은 성격 특성이다." },
       { en: 'tract', ko: 'n. 토지, 넓은 면적[지역]', phonetic: '', sentence: "A vast tract of land was sold to developers.", translation: "광활한 면적의 토지가 개발업자들에게 팔렸다." },
